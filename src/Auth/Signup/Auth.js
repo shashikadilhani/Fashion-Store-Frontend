@@ -22,6 +22,7 @@ class Auth extends Component {
                 },
                 valid: false,
                 touched: false
+                
             },
             password: {
                 elementType: 'input',
@@ -120,7 +121,7 @@ class Auth extends Component {
         return (
             <div className="c1">
                 <div className="Authentication">
-                <form onSubmit={this.submitHandler}>
+                <form className="mb-3" onSubmit={this.submitHandler}>
                     {form}
                 <Button btnType="Success">SUBMIT</Button>
                 

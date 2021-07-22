@@ -5,7 +5,7 @@ import './App.css';
 import AppNavbar from './AppNavbar';
 import Login from './Auth/Login/login';
 import Auth from './Auth/Signup/Auth';
-import Home from './Home';
+import Home from './Home/Home';
 
  class App extends React.Component  {
  render() {
