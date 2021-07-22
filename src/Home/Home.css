@@ -1,0 +1,71 @@
+.nav3{
+    padding: 5mm;
+    opacity: 5;
+    font: 700;
+}
+
+.nav2{
+    padding: 5mm;
+    opacity: 5;
+    font: 700;
+    align-items: flex-end;
+    padding-left: 30mm;
+    color: rgb(253, 253, 255);
+    font-size: 5mm;
+}
+
+.nav4{
+    padding-left: 220mm;
+    padding-right: 7mm;
+}
+
+p{
+    text-align: center;
+    margin-top: 70mm;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+.landing{
+     
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/f5.jpg");
+    padding: 30px;
+    background-size: 500px;
+    height: 200mm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: white;
+        
+}
+
+.nav3.nav-link{
+color: white;
+}
+.nav4.nav-link{
+    color: white;
+}
+
+/* .landing::before{
+    background: linear-gradient(to top, rgba(27, 110, 103, 0.75), rgba(0, 0, 0, 0.25));
+    content: ' ';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  */
+
+
+ 
