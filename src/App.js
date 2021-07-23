@@ -6,6 +6,11 @@ import AppNavbar from './AppNavbar';
 import Login from './Auth/Login/login';
 import Auth from './Auth/Signup/Auth';
 import Home from './Home/Home';
+import men from './item/men';
+import women from './item/women';
+import kids from './item/kids';
+import adult from './item/adult';
+
 
  class App extends React.Component  {
  render() {
@@ -19,7 +24,10 @@ import Home from './Home/Home';
             <Route path="/" exact component={Home} />
             <Route path="/login" exact component={Login} />
             <Route path="/signup" exact component={Auth} />
-
+            <Route path="/men" exact component={men} />
+            <Route path="/kids" exact component={kids} />
+            <Route path="/women" exact component={women} />
+            <Route path="/adult" exact component={adult} />
             <Route path="/logout"
               exact
               component={() => (

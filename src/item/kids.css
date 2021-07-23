@@ -1,0 +1,64 @@
+/* .icon: {
+    marginRight: theme.spacing(2),
+  }
+  .heroContent: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6),
+  },
+  heroButtons: {
+    marginTop: theme.spacing(4),
+  },
+  cardGrid: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  }, */
+  .name {
+    /* height: 100%; */
+    display: 'flex';
+    flex-direction: 'column';
+    margin-top: 10mm;
+    background-color: chocolate;
+    
+  }
+
+  .test{
+    background-color: blue;
+    height: 40mm;
+    padding-left: 0mm;
+    width: 55mm;
+  }  
+
+  .action{
+    width: 59mm;
+    background-color: chartreuse;
+  }
+
+  .grr{
+      background-color: rgb(62, 226, 226);
+      /* width: 70mm; */
+      margin-left: 9mm;
+      /* height: 80mm; */
+
+  }
+
+  .kkk{
+      background-color: darkgreen;
+  }
+ .MuiPaper-root-MuiCard-root-name-MuiPaper-elevation1-MuiPaper-rounded {
+    width: 0mm;
+ }
+
+  
+
+ 
+  /* ,
+  cardMedia: {
+    paddingTop: '56.25%', // 16:9
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6),
+  }, */
