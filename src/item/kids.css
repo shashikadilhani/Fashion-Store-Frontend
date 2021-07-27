@@ -1,64 +1,91 @@
-/* .icon: {
-    marginRight: theme.spacing(2),
-  }
-  .heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  }, */
-  .name {
-    /* height: 100%; */
-    display: 'flex';
-    flex-direction: 'column';
-    margin-top: 10mm;
-    background-color: chocolate;
-    
-  }
 
-  .test{
+  /* .media{
+    background-color: crimson;
+  }  */
+
+  /* .test{
     background-color: blue;
-    height: 40mm;
-    padding-left: 0mm;
-    width: 55mm;
-  }  
+    border-radius: 10px;
+    border: 0px;
+    border-color: tomato;
+    border-style: solid;
+    transition: 200ms;
+    
+  }   */
 
   .action{
-    width: 59mm;
     background-color: chartreuse;
+    border-radius: 5px;
+    border: 0px;
+    border-color: tomato;
+    border-style: solid;
+    transition: 200ms;
   }
 
-  .grr{
+  /* .grr{
       background-color: rgb(62, 226, 226);
-      /* width: 70mm; */
       margin-left: 9mm;
-      /* height: 80mm; */
 
-  }
+  } */
 
-  .kkk{
+  /* .kkk{
       background-color: darkgreen;
   }
  .MuiPaper-root-MuiCard-root-name-MuiPaper-elevation1-MuiPaper-rounded {
     width: 0mm;
- }
+ } */
 
   
 
- 
-  /* ,
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  }, */
+   .name {
+    background-color: rgb(173, 206, 7);
+    color: #272727;
+    padding: 20px;
+    /* border-radius: 10px; */
+    border: 0px;
+    border-color: tomato;
+    border-style: solid;
+    transition: 200ms;
+      max-width: 200px;
+    background-attachment: fixed;
+
+  }
+
+  .cardGrid{
+    padding-top: 20px;
+    padding-bottom: 9px;
+    /* background-color: cyan; */
+    width: 800px;
+   
+  }
+
+
+  .CardContent{
+    flex-grow: 1;
+    color: black;
+    /* background-color: darkblue; */
+  }
+  .fragment{
+    padding-left: 10px;
+    background-color: crimson;
+  }
+
+  .card{
+    height: '100%';
+    display: 'flex';
+    flex-direction: 'column';
+    padding-right: 8mm;
+    padding-top: 5mm;
+    
+    
+  }
+  
+  .content{
+    background-color: rgb(236, 174, 236);
+    /* border-radius: 5px; */
+    border: 0px;
+    border-color: tomato;
+    border-style: solid;
+    transition: 200ms;
+  }
+  

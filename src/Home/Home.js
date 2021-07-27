@@ -3,10 +3,6 @@ import './Home.css';
 import { withCookies } from 'react-cookie';
 import { Container} from 'react-bootstrap';
 import { Navbar, NavLink } from 'reactstrap';
-import Adult from '../item/adult';
-import men from '../item/men';
-import Party from '../item/party';
-import kids from '../item/kids';
 
 class Home extends Component {
  
