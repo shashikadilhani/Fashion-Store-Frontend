@@ -52,10 +52,9 @@
   }
 
   .cardGrid{
-    padding-top: 20px;
-    padding-bottom: 9px;
-    /* background-color: cyan; */
-    width: 800px;
+    padding-top: 50px;
+    background-size: auto;
+    height:fit-content;
    
   }
 
@@ -88,4 +87,11 @@
     border-style: solid;
     transition: 200ms;
   }
+
+  /* .MuiGrid-root-Mui-Grid-container-MuiGrid-spacing-xs-4{
+    width: fit-content;
+    background-color: crimson;
+  } */
+
+  
   
