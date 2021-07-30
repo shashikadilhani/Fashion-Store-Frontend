@@ -26,7 +26,8 @@ import adult from './item/adult';
             <Route path="/signup" exact component={Auth} />
             <Route path="/men" exact component={men} />
             <Route path="/kids" exact component={kids} />
-            <Route path="/women" exact component={women} />
+            <Route path="/womentypes" exact component={kids} />
+            <Route path="/woman" exact component={women} />
             <Route path="/adult" exact component={adult} />
             <Route path="/logout"
               exact

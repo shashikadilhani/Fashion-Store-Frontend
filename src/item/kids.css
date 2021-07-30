@@ -1,18 +1,4 @@
 
-  /* .media{
-    background-color: crimson;
-  }  */
-
-  /* .test{
-    background-color: blue;
-    border-radius: 10px;
-    border: 0px;
-    border-color: tomato;
-    border-style: solid;
-    transition: 200ms;
-    
-  }   */
-
   .action{
     background-color: chartreuse;
     border-radius: 5px;
@@ -20,22 +6,8 @@
     border-color: tomato;
     border-style: solid;
     transition: 200ms;
+    height: 5mm;
   }
-
-  /* .grr{
-      background-color: rgb(62, 226, 226);
-      margin-left: 9mm;
-
-  } */
-
-  /* .kkk{
-      background-color: darkgreen;
-  }
- .MuiPaper-root-MuiCard-root-name-MuiPaper-elevation1-MuiPaper-rounded {
-    width: 0mm;
- } */
-
-  
 
    .name {
     background-color: rgb(173, 206, 7);
@@ -62,7 +34,6 @@
   .CardContent{
     flex-grow: 1;
     color: black;
-    /* background-color: darkblue; */
   }
   .fragment{
     padding-left: 10px;
@@ -81,17 +52,11 @@
   
   .content{
     background-color: rgb(236, 174, 236);
-    /* border-radius: 5px; */
     border: 0px;
     border-color: tomato;
     border-style: solid;
     transition: 200ms;
   }
-
-  /* .MuiGrid-root-Mui-Grid-container-MuiGrid-spacing-xs-4{
-    width: fit-content;
-    background-color: crimson;
-  } */
 
   
   

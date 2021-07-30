@@ -9,11 +9,12 @@
  
 .nav{
   color: #e2e6e7;
-  background-color: rgb(17, 8, 34);
+  background-color: rgb(50, 44, 51);
   padding: 20px;
   margin-top: 0px;
-  height: 25px;
+  height: 15px;
   width: auto;
+  font-size: 0.5cm;
   
 }
  

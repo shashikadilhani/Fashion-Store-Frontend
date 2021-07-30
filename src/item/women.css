@@ -1,0 +1,162 @@
+
+.grid1 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/blouse.jpg");
+    min-height: 80mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 60mm;
+}
+
+.kkk{
+    grid-column-gap: 10px;
+    padding-top: 5mm;
+    padding-left: 5mm;
+    background-image: linear-gradient(to right, rgb(36, 34, 34) , rgb(94, 226, 215));
+}
+.grid1:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+.grid2 {
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    min-height: 180mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    width: 60mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+}
+
+.grid3 {
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/gawon.jpg");
+    min-height: 180mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    width: 60mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+   
+}
+.grid4{
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/skirt.jpg");
+    min-height: 180mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    width: 60mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+}
+
+
+.grid5{
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/office.jpg");
+    min-height: 180mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 60mm;
+}
+
+.grid6{
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/denim.jpg");
+    min-height: 180mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    transition: 200ms;
+    border-radius: 10px;
+	border: 5px;
+	border-color: rgb(109, 235, 197);
+	border-style: solid;
+    width: 60mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+}
+
+.grid2:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid3:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid4:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid5:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+ 
