@@ -9,10 +9,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid;
+    /* border-radius: 10px; */
+	/* border: 5px; */
+	/* border-color: rgb(109, 235, 197); */
+	/* border-style: solid; */
     text-align: center;
     font-size: 10mm;
     color: white;
@@ -20,7 +20,7 @@
 }
 
 .kkk{
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
     padding-top: 5mm;
     padding-left: 5mm;
     background-image: linear-gradient(to right, rgb(36, 34, 34) , rgb(94, 226, 215));
@@ -41,10 +41,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
+    /* border-radius: 10px;
 	border: 5px;
 	border-color: rgb(109, 235, 197);
-	border-style: solid;
+	border-style: solid; */
     width: 60mm;
     text-align: center;
     font-size: 10mm;
@@ -61,10 +61,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
+    /* border-radius: 10px;
 	border: 5px;
 	border-color: rgb(109, 235, 197);
-	border-style: solid;
+	border-style: solid; */
     width: 60mm;
     text-align: center;
     font-size: 10mm;
@@ -81,10 +81,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
+    /* border-radius: 10px;
 	border: 5px;
 	border-color: rgb(109, 235, 197);
-	border-style: solid;
+	border-style: solid; */
     width: 60mm;
     text-align: center;
     font-size: 10mm;
@@ -102,10 +102,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
+    /* border-radius: 10px;
 	border: 5px;
 	border-color: rgb(109, 235, 197);
-	border-style: solid;
+	border-style: solid; */
     text-align: center;
     font-size: 10mm;
     color: white;
@@ -122,10 +122,10 @@
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    border-radius: 10px;
+    /* border-radius: 10px;
 	border: 5px;
 	border-color: rgb(109, 235, 197);
-	border-style: solid;
+	border-style: solid; */
     width: 60mm;
     text-align: center;
     font-size: 10mm;
@@ -159,4 +159,153 @@
     border-color: rgb(245, 242, 242);
     border-style: solid;
 }
+
+
+/* ======================MEN.JS===================== */
+
+
+.mengrid{
+    grid-column-gap: 30px;
+    padding-top: 5mm;
+    padding-left: 5mm;
+    transition: 200ms;
+    grid-column-end: 20mm;
+    grid-row-gap: 5mm;
+}
+
+.grid11 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/blouse.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid12 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid13 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid14 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid15 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid16 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+    color: white;
+    width: 90mm;
+}
+
+.grid11:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid12:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid13:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid14:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid15:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+.grid16:hover{
+    transition: 200ms;
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;
+}
+
+
+ 
+
  

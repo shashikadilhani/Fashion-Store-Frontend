@@ -6,8 +6,6 @@ import Grid from '@material-ui/core/Grid';
 import { Container, Row, Col } from 'reactstrap';
 import Aux from '../Auxx';
  
-
-
   
 class women extends Component{
 
