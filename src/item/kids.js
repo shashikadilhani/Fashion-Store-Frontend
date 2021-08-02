@@ -27,9 +27,6 @@ class kids extends Component{
         });
       }
 
-      
-
-
   render() {
     return (
                 <React.Fragment className="fragment">  

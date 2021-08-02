@@ -5,23 +5,35 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Container, Row, Col } from 'reactstrap';
 import Aux from '../Auxx';
+import Kids from '../item/kids';
+import Party from '../item/party';
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
  
   
 class women extends Component{
 
-    constructor(){
+    constructor(props){
         
-          super();
+          super(props);
           this.state = {
-               
+            showComponent: false,
           }
+          this.myFunction= this.myFunction.bind(this);
       }
 
-      handleClick = () => {
-        console.log('HERE!');
-        // this.context.location.transitionTo('login');
-      };
+      _onButtonClick() {
+          // <a href="http://www.google.com" onclick="return myFunction();">Link</a>
+          <Link to="/party" className="btn btn-primary"></Link>
+        }
  
+      myFunction() {
+       
+        this.setState({
+          showComponent: true,
+        });
+      
+    }
   render() {
     return (    
       
@@ -30,30 +42,27 @@ class women extends Component{
         
 
         <Grid className="grid1"  >
-      
-            <p>BLOUSES</p>
+        <Link to="/blouse" className="font" >BLOUSE</Link>
         </Grid> 
-        <Grid className="grid2"  >
-        <p>                                          
-          SAREE
-        </p>
+
+        <Grid  className="grid2" >
+        <Link to="/saree" className="font" >SAREE</Link>
         </Grid> 
        
         <Grid className="grid3" >
-        <p>                                          
-           GAWON
-        </p>
-
+        <Link to="/party" className="font" >FROCK</Link>
         </Grid>
+
         <Grid className="grid4"  >
-            <p>SKIRTS</p>
+        <Link to="/party" className="font" >SKIRT</Link>
+        </Grid>
 
-        </Grid>
         <Grid className="grid5">
-            <p>OFFICE WARE</p>
+        <Link to="/party" className="font" >OFFICE</Link>
         </Grid>
+
         <Grid className="grid6"  >
-            <p>DENIMS</p>
+        <Link to="/party" className="font" >DENIM</Link>
         </Grid>
         
 

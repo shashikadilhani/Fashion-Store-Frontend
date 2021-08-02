@@ -10,6 +10,10 @@ import men from './item/men';
 import women from './item/women';
 import kids from './item/kids';
 import adult from './item/adult';
+import party from './item/party';
+
+import blouse from './womenitemtypes/blouse';
+import saree from './womenitemtypes/saree';
 
 
  class App extends React.Component  {
@@ -29,6 +33,10 @@ import adult from './item/adult';
             <Route path="/womentypes" exact component={kids} />
             <Route path="/woman" exact component={women} />
             <Route path="/adult" exact component={adult} />
+            <Route path="/party" exact component={party} />
+
+            <Route path="/blouse" exact component={blouse} />
+            <Route path="/saree" exact component={saree} />
             <Route path="/logout"
               exact
               component={() => (
