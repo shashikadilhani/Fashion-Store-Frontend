@@ -1,0 +1,156 @@
+.grid{
+    grid-column-gap: 30px;
+    padding-top: 5mm;
+    padding-left: 5mm;
+    transition: 200ms;
+    grid-column-end: 20mm;
+    grid-row-gap: 5mm;
+    
+    /* background-image:
+    linear-gradient(to top, rgba(16, 141, 68, 0.75), rgba(23, 119, 71, 0.25)); */
+}
+
+.gridcomponent{ 
+    height: 60mm;
+    background-size: cover;
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+     width: 60mm;
+     border: 2px;
+     border-color: rgb(19, 107, 107);
+     border-style: solid;
+}
+
+.card1{ 
+    height: 70.8mm;
+    background-size: cover;
+    /* cursor: pointer; */
+    outline-width: 10mm;
+    text-align: center;
+    font-size: 10mm;
+     width: 60mm;
+     border: 2px;
+     border-color: rgb(19, 107, 107);
+     border-style: solid;
+  
+}
+.cv{
+    font-size: 4mm;
+}
+
+.content1{
+    height: 45mm;
+    
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../assets/saree.jpg");
+}
+ 
+.gridcomponent:hover{
+    border: 3px;
+    border-color: rgb(245, 242, 242);
+    border-style: solid;   
+}
+
+.action1{ 
+    transition: 200ms;
+    height:1mm;
+  }
+
+   .name {
+    background-color: rgb(19, 43, 121);
+    color: #272727;
+    padding: 20px;
+    border: 0px;
+    border-color: tomato;
+    border-style: solid;
+    transition: 200ms;
+    max-width: 200px;
+    background-attachment: fixed;
+  }
+
+  .btn{
+      border-radius: 1mm;
+      height: 8mm;
+      font-size: 3mm;
+      text-align: center;
+      width: 15mm; 
+      border: 5mm;
+      border-width: 3mm;
+      background-color: rgb(71, 175, 158);
+  }
+  .btn2{
+    height: 8mm;
+    font-size: 3mm;
+    text-align: center;
+    width: 45mm;   
+}
+
+  .class1{
+    font-size: 5mm;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    height: 4mm;
+}
+
+/* .CardContent1{
+    color: lightcyan;
+} */
+
+  /* .card-block{
+      background-color: violet;
+ 
+      
+  } */ 
+
+   /* .card-title{
+       width: 60mm;
+       max-height: 5mm;
+   } */
+   /* .card-footer-1{
+       
+       background-color: tomato;
+       min-width: 60mm;
+       max-width: 60mm;
+       height: 8mm;
+   }
+
+   .card-footer-2{
+ 
+   
+    min-width: 60mm;
+    max-width: 60mm;
+    
+  
+} */
+
+/* .button{
+    width: 20mm;
+    border-color: rgb(180, 23, 146);
+    border-radius: 0mm;
+    border-width: 0.3mm;
+    background-color: rgb(255, 255, 246);
+    padding: 2mm;
+} */
+
+.divnav{
+    /* height: 0mm; */
+    background-color: rgb(19, 107, 107);
+    height: 12mm;
+    color: aliceblue;
+    text-align: center;
+    font-size: 5mm;
+    font-style: italic;
+    
+}
+
+/* s */
+
+/* .card-deck{
+    margin-top: 0mm;
+    padding: 2mm;
+    
+} */
+
+ 
