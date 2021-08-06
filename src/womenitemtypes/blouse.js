@@ -3,12 +3,14 @@ import Grid from '@material-ui/core/Grid';
 import './itemtypes.css';
 import ItemService from '../Service/ItemService';
 import { Button } from 'reactstrap';
-
+// import Image from 'react-bootstrap';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Image from 'react-bootstrap/Image'
+
 
 import Aux from '../Auxx';
   
@@ -27,6 +29,7 @@ class blouse extends Component{
         });
 
       }
+ 
 
   render() {
     return (
@@ -40,15 +43,18 @@ class blouse extends Component{
 
             {this.state.items.map((item) => (
 
+              // <div>
+              //   <img src={`data:image/jpeg;base64,${item.image}`} />
+              // </div>
+
               <Card className="card1" >
               <CardMedia className="media"
           
                 image="https://source.unsplash.com/random"
                 title="Image title"
               />
-              <CardContent className="content1"  >
-                
-                {/* image */}
+              <CardContent className="content1">
+              <img src={`data:image/jpeg;base64,${item.image}`} />
               </CardContent>
               <div className="class1">Rs. 500.00</div>
               <CardActions className="action1"  direction='row'>
