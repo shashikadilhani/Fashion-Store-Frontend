@@ -1,5 +1,5 @@
 .grid{
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
     padding-top: 5mm;
     padding-left: 5mm;
     transition: 200ms;
@@ -79,7 +79,7 @@
       height: 8mm;
       font-size: 3mm;
       text-align: center;
-      width: 15mm; 
+      width: 27mm; 
       border: 5mm;
       border-width: 3mm;
       background-color: rgb(71, 175, 158);

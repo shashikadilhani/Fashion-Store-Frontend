@@ -54,19 +54,20 @@ class blouse extends Component{
                 title="Image title"
               />
               <CardContent className="content1">
-              <img src={`data:image/jpeg;base64,${item.image}`} />
+              {<img width = '200'height='200' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${item.image} `} />}
+              {/* <img src="data:image/png;base64," alt="Red dot" /> */}
               </CardContent>
-              <div className="class1">Rs. 500.00</div>
+              {/* <div className="class1">{item.price}</div> */}
               <CardActions className="action1"  direction='row'>
-                <Button class="small" className="btn">
-                  View
-                </Button>
-                <Button className="btn2">
-                  Edit
+                <Button className="btn">
+                  Rs. {item.price}
                 </Button>
                 <Button className="btn">
-                  Edit
+                  View
                 </Button>
+                {/* <Button className="btn">
+                  -
+                </Button> */}
               </CardActions>
             </Card>
           ))}           
