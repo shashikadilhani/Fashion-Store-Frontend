@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Auth from './Auth/Signup/Auth';
 import Login from './Auth/Login/login';
-import './styles/app.scss';
+// import './styles/app.scss';
 import {
   Collapse,Navbar, NavLink,
     Nav,
@@ -15,7 +15,10 @@ import {
     Input,
     Form,
     NavItem,
+    Button,
+    NavbarBrand
   } from "reactstrap";
+import { NavDropdown } from 'react-bootstrap';
 
 export default class AppNavbar extends Component {
   constructor(props) {
@@ -31,13 +34,13 @@ export default class AppNavbar extends Component {
   }
 
   render() {
-    return <Navbar className="nav" >
- 
-      <Collapse isOpen={this.state.isOpen} navbar>
-       
+    return <Navbar className="nav1" >
+      {/* <Collapse isOpen={this.state.isOpen} navbar>     */}
       <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
-      <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>  
-      </Collapse>
+      <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>
+      <button onClick="sdff" className="navdiv">ORDER NOW</button>
+      
+      {/* </Collapse> */}
     </Navbar>;
 
     return 

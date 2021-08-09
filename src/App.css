@@ -7,22 +7,33 @@
   height: 40vmin;
 }
  
-.nav{
+/* .nav{
   color: #e2e6e7;
   background-color: rgb(50, 44, 51);
   padding: 20px;
-  margin-top: 0px;
   height: 15px;
   width: auto;
   font-size: 0.5cm;
+  column-gap: 100mm;
   
-}
- 
+} */
+ .nav1{
+  background-color: rgb(50, 44, 51);
+   height:25mm;
+ }
 .navitem{
   margin-left:30px;
   margin-right:30px;
   color: #e2e6e7;
-  margin-top: 0px;
+}
+
+.navdiv{
+  background-color: rgb(126, 233, 233);
+  width: 35mm;
+  /* border: 4mm; */
+  /* border-width: 15mm;
+  border-color: chartreuse; */
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
@@ -34,9 +45,6 @@
   }
 }
 
-.container, .container-fluid {
-  /* margin-top: 20px; */
-  /* background-image: url("./assets/f1.jpg"); */
-  background-size: 600px;
-   
-}
+ 
+
+ 
