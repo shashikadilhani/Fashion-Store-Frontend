@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 import './App.css';
@@ -17,6 +17,13 @@ import saree from './womenitemtypes/saree';
 
 
  class App extends React.Component  {
+
+  // const [token, setToken] = useState();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
+
  render() {
    return (
     <Router>
