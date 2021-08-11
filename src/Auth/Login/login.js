@@ -1,34 +1,98 @@
 import React, { Component } from 'react';
-// import './App.css';
-// import AppNavbar from './AppNavbar';
-import { withCookies } from 'react-cookie';
-import UserComponent from '../../Component/user/UserComponent';
-// import { Container, Row, Col } from 'reactstrap';
+import { login } from '../../util/APIUtills';
+import './login.css';
+import { Link } from 'react-router-dom';
+import { ACCESS_TOKEN } from '../../constants';
+import { antIcon } from 'antd';
 
-class login extends Component {
- 
-  render() {
-    
-    return (  
-      <div className="login-wrapper">
-      <h1>Please Log In</h1>
-      <form>
-        <label>
-          <p>Username</p>
-          <input type="text" />
-        </label>
-        <label>
-          <p>Password</p>
-          <input type="password" />
-        </label>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>  
-         
-    );
-  }
+import { Input, Button, notification } from 'antd';
+import { Form } from '@ant-design/compatible';
+
+
+const FormItem = Form.Item;
+
+class Login extends Component {
+    render() {
+        const AntWrappedLoginForm = Form.create()(LoginForm)       
+        return (
+            <div className="login-container">
+                <h1 className="page-title">Login</h1>
+                <div className="login-content">
+                    <AntWrappedLoginForm onLogin={this.props.onLogin} />
+                </div>
+            </div>
+        );
+    }
 }
 
-export default withCookies(login);
+
+
+class LoginForm extends Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();   
+        this.props.form.validateFields((err, values) => {
+            if (!err) {
+                const loginRequest = Object.assign({}, values);
+                login(loginRequest)
+                .then(response => {
+                    localStorage.setItem(ACCESS_TOKEN, response.accessToken);
+                    this.props.onLogin();
+                }).catch(error => {
+                    if(error.status === 401) {
+                        notification.error({
+                            message: 'Polling App',
+                            description: 'Your Username or Password is incorrect. Please try again!'
+                        });                    
+                    } else {
+                        notification.error({
+                            message: 'Polling App',
+                            description: error.message || 'Sorry! Something went wrong. Please try again!'
+                        });                                            
+                    }
+                });
+            }
+        });
+    }
+
+    render() {
+        const { getFieldDecorator } = this.props.form;
+        return (
+            <Form onSubmit={this.handleSubmit} className="login-form">
+                <FormItem>
+                    {getFieldDecorator('usernameOrEmail', {
+                        rules: [{ required: true, message: 'Please input your username or email!' }],
+                    })(
+                    <Input 
+                        size="large"
+                        name="usernameOrEmail" 
+                        placeholder="Username or Email" />    
+                    )}
+                </FormItem>
+                <FormItem>
+                {getFieldDecorator('password', {
+                    rules: [{ required: true, message: 'Please input your Password!' }],
+                })(
+                    <Input 
+                        prefix={<antIcon type="lock" />}
+                        size="large"
+                        name="password" 
+                        type="password" 
+                        placeholder="Password"  />                        
+                )}
+                </FormItem>
+                <FormItem>
+                    <Button type="primary" htmlType="submit" size="large" className="login-form-button">Login</Button>
+                    Or <Link to="/auth">register now!</Link>
+                </FormItem>
+            </Form>
+        );
+    }
+}
+
+
+export default Login;

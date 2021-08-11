@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Collapse,Navbar, NavLink } from 'reactstrap';
 import './App.css';
 import Auth from './Auth/Signup/Auth';
-import Login from './Auth/Login/login';
+import Login from './Auth/Login/Login';
 // import './styles/app.scss';
 import {
   Collapse,Navbar, NavLink,
