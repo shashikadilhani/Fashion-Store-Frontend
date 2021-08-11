@@ -7,6 +7,7 @@ import { antIcon } from 'antd';
 
 import { Input, Button, notification } from 'antd';
 import { Form } from '@ant-design/compatible';
+import Grid from '@material-ui/core/Grid';
 
 
 const FormItem = Form.Item;
@@ -15,12 +16,22 @@ class Login extends Component {
     render() {
         const AntWrappedLoginForm = Form.create()(LoginForm)       
         return (
-            <div className="login-container">
-                <h1 className="page-title">Login</h1>
-                <div className="login-content">
-                    <AntWrappedLoginForm onLogin={this.props.onLogin} />
-                </div>
-            </div>
+
+            <Grid direction='row' container  >
+                {/* <Grid className="clm1" flex='1'>
+                    FAHIOIN HUB
+                </Grid> */}
+
+                <Grid className="clm2">
+                    <div className="login-container">
+                            <h1 className="page-title">Login</h1>
+                            <div className="login-content">
+                                <AntWrappedLoginForm onLogin={this.props.onLogin} />
+                            </div>
+                    </div>
+                </Grid>
+
+            </Grid>
         );
     }
 }
@@ -63,21 +74,21 @@ class LoginForm extends Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <Form onSubmit={this.handleSubmit} className="login-form">
-                <FormItem>
+                <FormItem className="formitem">
                     {getFieldDecorator('usernameOrEmail', {
                         rules: [{ required: true, message: 'Please input your username or email!' }],
                     })(
-                    <Input 
+                    <Input className="plc"
                         size="large"
                         name="usernameOrEmail" 
                         placeholder="Username or Email" />    
                     )}
-                </FormItem>
-                <FormItem>
+                </FormItem >
+                <FormItem className="formitem">
                 {getFieldDecorator('password', {
                     rules: [{ required: true, message: 'Please input your Password!' }],
                 })(
-                    <Input 
+                    <Input className="plc2"
                         prefix={<antIcon type="lock" />}
                         size="large"
                         name="password" 
@@ -85,9 +96,9 @@ class LoginForm extends Component {
                         placeholder="Password"  />                        
                 )}
                 </FormItem>
-                <FormItem>
+                <FormItem className="formitem2">
                     <Button type="primary" htmlType="submit" size="large" className="login-form-button">Login</Button>
-                    Or <Link to="/auth">register now!</Link>
+                     <Link className="link" to="/auth">register now!</Link>
                 </FormItem>
             </Form>
         );

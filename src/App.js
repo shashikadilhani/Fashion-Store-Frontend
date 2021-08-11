@@ -4,16 +4,17 @@ import { Container, Row, Col } from "react-bootstrap";
 // import './App.css';
 import AppNavbar from './AppNavbar';
 // import Login from './Auth/Login/login';
-import Signup from './Auth/Signup/Auth';
+import Auth from './Auth/Signup/Auth'
+// import Signup from './Auth/Signup/Auth';
 import Home from './Home/Home';
-// import men from './item/men';
-// import women from './item/women';
-// import kids from './item/kids';
-// import adult from './item/adult';
-// import party from './item/party';
+import men from './item/men';
+import women from './item/women';
+import kids from './item/kids';
+import adult from './item/adult';
+import Party from './item/party';
 
-// import blouse from './womenitemtypes/blouse';
-// import saree from './womenitemtypes/saree';
+import blouse from './womenitemtypes/blouse';
+import saree from './womenitemtypes/saree';
 
 //  class App extends React.Component  {
 
@@ -176,16 +177,26 @@ class App extends React.Component {
            <AppNavbar />
            
            <Container>
-             <Row>
-               <Col lg={12} className={"margin-top"}>
+             <Row className="column1">
+               <Col lg={12} className="column2">
                  <Switch>
-                  <Route path="/" exact component={Home} />
+                <Route path="/" exact component={Home} />
+                <Route path="/men" exact component={men} />
+                <Route path="/kids" exact component={kids} />
+                <Route path="/womentypes" exact component={kids} />
+                <Route path="/woman" exact component={women} />
+                <Route path="/adult" exact component={adult} />
+                <Route path="/party" exact component={Party} />
+
+                <Route path="/blouse" exact component={blouse} />
+                <Route path="/saree" exact component={saree} />
+
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
-                <Route path="/auth" exact component={Signup}></Route>
+                <Route path="/signup" exact component={Auth} />
                 
-                <Route path="/home" 
-                  render={(props) => <Home isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
+                <Route path="/" 
+                  render={(props) => <Party isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
                 </Route>
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
                 <Route component={NotFound}></Route>

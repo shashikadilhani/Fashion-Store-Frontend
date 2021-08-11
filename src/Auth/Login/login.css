@@ -1,10 +1,85 @@
 .login-container {
-    max-width: 420px;
+    /* max-width: 420px; */
+    width: 200mm;
     margin: 0 auto;
     margin: 0 auto;
     margin-top: 40px;
+    background-color: yellow;
+    height: 140mm;
+    padding-top: 20px;
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(247, 235, 235, 0.25)),
+    url("../../assets/f7.jpg");
+    background-size: cover;
+    border-radius: 5mm;
+}
+
+.login-container:hover{
+    background-color: yellow;
+    opacity: 10;
 }
 
 .login-form-button {
     width: 100%;
+}
+
+.clm1{
+    background-image:
+   
+   url("../../assets/f7.jpg");
+   width: 200mm;
+   height: 170mm;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   font-size: 20mm;
+
+}
+
+.clm2{
+    /* background-color: rgb(31, 99, 99); */
+    background-image:
+    linear-gradient(to top, rgb(45, 98, 102), rgba(243, 251, 252, 0.993));
+    width: 400mm;
+    height: 170mm;
+    align-items: center;
+}
+
+.formitem{
+    height: 20mm;
+    width: 80mm;
+    padding-left: 20mm;
+}
+
+.formitem2{
+    width: 68mm;
+    align-items: center;
+    padding-left: 20mm;
+}
+
+.login-form{
+    align-items: center;
+   
+}
+
+.plc{
+    background-color: rgb(245, 245, 248);
+    /* border: burlywood; */
+}
+
+.plc2{
+    /* background-color: rgb(245, 245, 248); */
+    border: burlywood;
+    border-width: 1mm;
+}
+
+.login-form-button{
+    background-color: rgb(250, 247, 244);
+    cursor: pointer;
+    height: 10mm;
+}
+
+.link{
+    color: white;
+   padding-left: 20mm;
 }

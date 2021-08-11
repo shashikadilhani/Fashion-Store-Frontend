@@ -42,11 +42,11 @@ class Auth extends Component {
         isSignup: true
     }
 
-    componentDidMount () {
-        if ( !this.props.buildingBurger && this.props.authRedirectPath !== '/' ) {
-            this.props.onSetAuthRedirectPath();
-        }
-    }
+    // componentDidMount () {
+    //     if ( !this.props.buildingBurger && this.props.authRedirectPath !== '/' ) {
+    //         this.props.onSetAuthRedirectPath();
+    //     }
+    // }
     
     checkValidity ( value, rules ) {
         let isValid = true;
