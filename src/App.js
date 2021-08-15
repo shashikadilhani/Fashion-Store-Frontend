@@ -10,8 +10,9 @@ import Home from './Home/Home';
 import men from './item/men';
 import women from './item/women';
 import kids from './item/kids';
-import adult from './item/adult';
-import Party from './item/party';
+import adult from './Our Services/ourservices';
+// import Party from './item/party';
+import Party from './aboutus/aboutus';
 
 import blouse from './womenitemtypes/blouse';
 import saree from './womenitemtypes/saree';
@@ -173,8 +174,14 @@ class App extends React.Component {
     }
     return (
 
+      
+
       <Router>
-           <AppNavbar />
+           {/* <AppNavbar /> */}
+
+           {/* <AppHeader isAuthenticated={this.state.isAuthenticated} 
+            currentUser={this.state.currentUser} 
+            onLogout={this.handleLogout} /> */}
            
            <Container>
              <Row className="column1">
@@ -205,6 +212,7 @@ class App extends React.Component {
                   render={(props) => <PollList isAuthenticated={this.state.isAuthenticated} 
                       currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
                 </Route> */}
+                
                 
                 </Switch>
               </Col>

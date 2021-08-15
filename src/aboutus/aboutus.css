@@ -1,0 +1,58 @@
+/* .aboutus{
+
+} */
+
+.row1{
+    background-image:
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(184, 8, 8, 0.25)), */
+    url("../aboutus/assests/dog2.jpg");
+    /* padding: 30px; */
+    background-size: 500px;
+    height: 160mm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.name1{
+    margin-top: 20mm;
+    width: 90mm;
+    background-color: aqua;
+    background-image: url("../aboutus/assests/cat3.jpg");
+    height: 120mm;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin-left: 50mm;
+}
+
+.name2{
+    margin-top: 40mm;
+    width: 100mm;
+    /* background-color: aqua; */
+    height: 100mm;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin-left: 50mm;
+}
+
+.row2{
+    grid-column-gap: 50px;
+}
+
+.div1{
+    font-size: 8mm;
+    color: rgb(123, 186, 216)
+    /* text-align: center; */
+}
+
+.div2{
+    margin-top: 10mm;
+    font-size: 5mm;
+    text-align: justify;
+    width: 150mm;
+    color: rgb(72, 73, 66);
+}

@@ -1,0 +1,150 @@
+
+.os2{
+    /* background-color: brown; */
+    column-gap: 10mm;
+}
+
+.os3{
+    /* background-color: brown; */
+    column-gap: 10mm;
+    margin-left: 50mm;
+}
+.os21{
+    width: 80mm;
+    margin-left: 10mm;
+    margin-top: 10mm;
+    height: 100mm;
+    border-style: solid;
+    /* border-width: 1mm; */
+    /* border-radius: 2mm; */
+    border-color: rgb(38, 145, 172);
+}
+
+
+.os11{
+    background-color: rgb(143, 177, 216);
+    width: 146mm;
+    height: 90mm;
+    background-image:
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(184, 8, 8, 0.25)), */
+    url("../Our\ Services/assests/dog1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.os12{
+    width: 400mm;
+    height: 130mm;    
+    background-image:
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    url("../Our\ Services/assests/dog5.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.os11div1{
+    background-color: chartreuse;
+    /* width: 50mm; */
+}
+
+.cardheader1{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/pets3.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader2{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/shelter1.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader3{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/dog1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader4{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/consult.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader5{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader6{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/hostel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 40mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+
+.cardtopic{
+    font-size: 7mm;
+    text-align: center;
+}
+
+.h1{
+    margin-top: 50mm;
+}
+
+.para{
+    text-align: center;
+    color: aqua;
+    font-size: 20mm;
+}
+ 
+ 

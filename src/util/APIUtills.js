@@ -1,5 +1,6 @@
 import { API_BASE_URL, POLL_LIST_SIZE, ACCESS_TOKEN } from '../constants';
 
+
 const request = (options) => {
     const headers = new Headers({
         'Content-Type': 'application/json',
@@ -27,14 +28,15 @@ const request = (options) => {
 export function login(loginRequest) {
 
     // return request({
-    //     url: API_BASE_URL + "/item/view/serial?serial_no=1",
+    //     url: API_BASE_URL + "/auth/login ",
     //     method: 'POST',
     //     body: JSON.stringify(loginRequest)
+      
         
     // });
 
     const results = fetch({
-        url: API_BASE_URL + "http://localhost:8080/auth/login",
+        url:  "http://localhost:8080/auth/login",
         method: 'POST',
         body: JSON.stringify(loginRequest),
         
@@ -43,6 +45,8 @@ export function login(loginRequest) {
     .catch(error => console.log('error============:', error));
 
     return results;
+
+   
 }
 
 export function signup(signupRequest) {

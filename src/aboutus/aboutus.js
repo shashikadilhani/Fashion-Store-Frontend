@@ -1,0 +1,46 @@
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import Grid from '@material-ui/core/Grid';
+import './aboutus.css';
+
+class aboutus extends Component {
+    render () {
+      return (
+        
+              <Grid Container>
+                   <Grid className="row1" direction='column'>
+                
+                   </Grid>
+
+                    <Grid className="row2"  direction='row' container>
+                        <Grid className="name1">
+                            
+                        </Grid>
+                        <Grid className="name2">
+                            <div className="div1">
+                                About Us
+                            </div>
+                            <div className="div2">
+                            An About Us page helps your company make a good first impression, and is critical for building customer trust and loyalty. An About Us page should make sure to cover basic information about the store and its founders, explain the company's purpose and how it differs from the competition, and encourage discussion and interaction. Here are some free templates, samples, and example About Us pages to help your ecommerce store stand out from the crowd.
+                            </div>
+                        </Grid>
+                    </Grid>
+                   
+             </Grid>
+             
+ 
+    //     <Grid className="kkk" direction='row' container  >
+    //     <Grid className="grid1"  >
+    //         <div>
+    //             snv
+    //         </div>
+    //         <div>
+    //             sbfvk
+    //         </div>
+    //     </Grid>     
+    // </Grid> 
+      );
+    }
+  }
+  
+  export default aboutus;
