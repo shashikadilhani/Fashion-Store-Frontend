@@ -66,7 +66,7 @@ class women extends Component{
         </Grid>
         
 
-    </Grid> 
+    </Grid>
           
     );
   }

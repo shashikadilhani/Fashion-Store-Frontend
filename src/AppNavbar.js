@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Auth from './Auth/Signup/Auth';
 import Login from './Auth/Login/Login';
+import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';
 // import './styles/app.scss';
 import {
@@ -42,11 +43,11 @@ export default class AppNavbar extends Component {
           <Navbar className="nav1" >
             <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
             <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>
-            <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
-            <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
+            <NavLink href="/login" exact component={Login} className="navitem">Home</NavLink>
+            <NavLink href="/login" exact component={Login} className="navitem">AboutUs</NavLink>
+            <NavLink href="/our_services" exact component={Services} className="navitem">Our Services</NavLink>
             <button onClick="sdff" className="navdiv">ORDER NOW</button> 
           </Navbar>
-
           </div>
           </>
     );

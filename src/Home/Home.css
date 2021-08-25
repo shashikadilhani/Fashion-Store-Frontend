@@ -21,7 +21,7 @@
 
 p{
     text-align: center;
-    margin-top: 70mm;
+    margin-top: 80mm;
     color: white;
 }
 h1{
@@ -43,6 +43,10 @@ h1{
     color: white;
         
 }
+ 
+.body{
+    height: 150mm;
+}
 
 .nav3.nav-link{
 color: white;
@@ -51,25 +55,5 @@ color: white;
     color: white;
 }
 
-/* .landing::before{
-    background: linear-gradient(to top, rgba(27, 110, 103, 0.75), rgba(0, 0, 0, 0.25));
-    content: ' ';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  */
-  .mn{
-      background-color: lawngreen;
-      
-  }
-
-
+ 
  

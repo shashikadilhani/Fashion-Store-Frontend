@@ -10,7 +10,7 @@
  .nav1{
   background-color: rgb(50, 44, 51);
    height:15mm;
-   width: 150mm;
+   width: 190mm;
    font-size: large;
  }
 
@@ -18,7 +18,7 @@
   background-color: rgb(50, 44, 51);
  }
 .navitem{
-  color: #e2e6e7;
+ 
   margin-left: 00mm;
   margin-right: 5mm;
 }
@@ -36,9 +36,10 @@
   height: 10mm;
   border-radius: 3mm;
   border-width: 1mm;
-  border-color: chartreuse;
+  border-color: rgb(231, 240, 240);
   cursor: pointer;
   font-size: 3mm;
+  color: rgb(56, 100, 94);
 }
 
 @keyframes App-logo-spin {

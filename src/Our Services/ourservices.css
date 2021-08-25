@@ -1,11 +1,9 @@
 
 .os2{
-    /* background-color: brown; */
     column-gap: 10mm;
 }
 
 .os3{
-    /* background-color: brown; */
     column-gap: 10mm;
     margin-left: 50mm;
 }
@@ -15,7 +13,7 @@
     margin-top: 10mm;
     height: 100mm;
     border-style: solid;
-    /* border-width: 1mm; */
+    border-width: 0.2mm;
     /* border-radius: 2mm; */
     border-color: rgb(38, 145, 172);
 }
@@ -27,7 +25,7 @@
     height: 90mm;
     background-image:
     /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(184, 8, 8, 0.25)), */
-    url("../Our\ Services/assests/dog1.jpg");
+    url("../Our\ Services/assests/c4.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -37,14 +35,15 @@
     width: 400mm;
     height: 130mm;    
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../Our\ Services/assests/dog5.jpg");
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../Our\ Services/assests/c9.jpg");
     
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     color: white;
     text-align: center;
+ 
     
 }
 
@@ -56,11 +55,11 @@
 .cardheader1{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/pets3.jfif");
+    url("../Our\ Services/assests/c1.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 40mm;
+    height: 70mm;
     font-size: 8mm;
     text-align: center;
     color: lemonchiffon;
@@ -69,11 +68,11 @@
 .cardheader2{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/shelter1.jfif");
+    url("../Our\ Services/assests/c2.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 40mm;
+    height: 70mm;
     font-size: 8mm;
     text-align: center;
     color: lemonchiffon;
@@ -82,11 +81,11 @@
 .cardheader3{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/dog1.jpg");
+    url("../Our\ Services/assests/c3.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 40mm;
+    height: 70mm;
     font-size: 8mm;
     text-align: center;
     color: lemonchiffon;
@@ -95,11 +94,11 @@
 .cardheader4{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/consult.jfif");
+    url("../Our\ Services/assests/fabric.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 40mm;
+    height: 70mm;
     font-size: 8mm;
     text-align: center;
     color: lemonchiffon;
@@ -108,7 +107,20 @@
 .cardheader5{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/home.jpg");
+    url("../Our\ Services/assests/shoe.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 70mm;
+    font-size: 8mm;
+    text-align: center;
+    color: lemonchiffon;
+}
+
+.cardheader6{
+    background-image:
+    /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
+    url("../Our\ Services/assests/c1.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -118,10 +130,10 @@
     color: lemonchiffon;
 }
 
-.cardheader6{
+.cardheader7{
     background-image:
     /* linear-gradient(to top, rgba(48, 43, 43, 0.363),rgba(12, 14, 13, 0.75)), */
-    url("../Our\ Services/assests/hostel.jpg");
+    url("../Our\ Services/assests/c1.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -135,6 +147,7 @@
 .cardtopic{
     font-size: 7mm;
     text-align: center;
+    color: rgb(14, 129, 223);
 }
 
 .h1{
@@ -143,8 +156,19 @@
 
 .para{
     text-align: center;
-    color: aqua;
+    /* color: aqua; */
     font-size: 20mm;
 }
+
+.footer{
+    background-color: aqua;
+}
+
+.copyright2{
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+    background-color: rgb(61, 122, 192);
+}
+
  
  

@@ -102,6 +102,7 @@ import AppHeader from './common/AppHeader';
 import NotFound from './common/NotFound';
 import LoadingIndicator from './common/LoadingIndicator';
 import PrivateRoute from './util/PrivetRoute';
+import Service from './Our Services/ourservices'
 
 import { Layout, notification } from 'antd';
 const { Content } = Layout;
@@ -186,12 +187,8 @@ class App extends React.Component {
 
            {/* <AppHeader isAuthenticated={this.state.isAuthenticated} 
             currentUser={this.state.currentUser} 
-            onLogout={this.handleLogout} /> */}
-           
-           <Container className="bb">
-             <Row className="column1">
-               <Col lg={12} className="column2">
-                 <Switch>
+            onLogout={this.handleLogout} /> */} 
+                <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />
@@ -199,6 +196,7 @@ class App extends React.Component {
                 <Route path="/woman" exact component={women} />
                 <Route path="/adult" exact component={adult} />
                 <Route path="/party" exact component={Party} />
+                <Route path="/our_services" exact component={Service} />
 
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
@@ -211,18 +209,8 @@ class App extends React.Component {
                   render={(props) => <Party isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
                 </Route>
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
-                <Route component={NotFound}></Route>
-
-                {/* <Route exact path="/" 
-                  render={(props) => <PollList isAuthenticated={this.state.isAuthenticated} 
-                      currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
-                </Route> */}
-                
-                
-                </Switch>
-              </Col>
-            </Row>
-          </Container>
+                <Route component={NotFound}></Route>    
+                </Switch>     
         </Router>
 
     );
