@@ -34,9 +34,9 @@ h1{
     background-image:
     linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/f5.jpg");
-    padding: 30px;
-    background-size: 500px;
-    height: 200mm;
+    /* padding: 30px; */
+    /* background-size: 500px; */
+    height: 180mm;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -66,6 +66,10 @@ color: white;
     width: 100%;
   }
   */
+  .mn{
+      background-color: lawngreen;
+      
+  }
 
 
  

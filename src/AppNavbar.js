@@ -38,19 +38,17 @@ export default class AppNavbar extends Component {
   render() {
     return(
         <>
+          <div className="div">
           <Navbar className="nav1" >
-          {/* <NavbarBrand href="/"><img src={logo} alt="" style={{width:"130px",height:"60px"}}/></NavbarBrand> */}
-            <Collapse isOpen={this.state.isOpen} navbar>    
             <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
             <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>
-            <NavLink href="/aboutus"   className="navitem">About Us</NavLink>
-            <NavLink href="/contactus"  className="navitem">Contact Us</NavLink>
-            <NavLink href="/services"  className="navitem">Services</NavLink>
-            <button onClick="sdff" className="navdiv">ORDER NOW</button>
-            
-            
-            </Collapse>
-          </Navbar></>
+            <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
+            <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
+            <button onClick="sdff" className="navdiv">ORDER NOW</button> 
+          </Navbar>
+
+          </div>
+          </>
     );
   }
 }

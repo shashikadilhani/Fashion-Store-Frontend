@@ -7,37 +7,38 @@
   height: 40vmin;
 }
  
-/* .nav{
-  color: #e2e6e7;
-  background-color: rgb(50, 44, 51);
-  padding: 20px;
-  height: 15px;
-  width: auto;
-  font-size: 0.5cm;
-  column-gap: 100mm;
-  
-} */
  .nav1{
   background-color: rgb(50, 44, 51);
-   height:25mm;
-   /* margin-top: -15mm; */
+   height:15mm;
+   width: 150mm;
    font-size: large;
  }
+
+ .div{
+  background-color: rgb(50, 44, 51);
+ }
 .navitem{
-  margin-left:30px;
-  margin-right:30px;
   color: #e2e6e7;
-  margin-top: -5mm;
+  margin-left: 00mm;
+  margin-right: 5mm;
+}
+
+.navitem2{
+  color: #e2e6e7;
+  margin-left: 00mm;
+  margin-right: 5mm;
+  width: 2mm;
 }
 
 .navdiv{
   background-color: rgb(126, 233, 233);
   width: 35mm;
-  /* border: 4mm; */
-  /* border-width: 15mm;
-  border-color: chartreuse; */
-  /* height: 7mm; */
+  height: 10mm;
+  border-radius: 3mm;
+  border-width: 1mm;
+  border-color: chartreuse;
   cursor: pointer;
+  font-size: 3mm;
 }
 
 @keyframes App-logo-spin {
@@ -49,6 +50,8 @@
   }
 }
  
- 
+ .bb{
+   background-color: lightcoral;
+ }
 
  

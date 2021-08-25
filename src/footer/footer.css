@@ -1,0 +1,36 @@
+.footer-Home{
+    background-color: #14204f;
+    background-attachment: fixed;
+    position: relative;
+    line-height: 30px;
+}
+
+.footer-topic{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.footer-row{
+    padding-top: 15px;
+}
+
+.footer-des{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.link{
+    color: aliceblue;
+    padding-left: 8px;
+}
+
+.copyright{
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+}
+
+.heart {
+    color: #EB5E28;
+    animation: heathing 2s ease infinite;
+
+}

@@ -17,6 +17,11 @@ import Party from './aboutus/aboutus';
 import blouse from './womenitemtypes/blouse';
 import saree from './womenitemtypes/saree';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+//slack
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 //  class App extends React.Component  {
 
 //   constructor(props) {
@@ -183,7 +188,7 @@ class App extends React.Component {
             currentUser={this.state.currentUser} 
             onLogout={this.handleLogout} /> */}
            
-           <Container>
+           <Container className="bb">
              <Row className="column1">
                <Col lg={12} className="column2">
                  <Switch>
