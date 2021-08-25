@@ -177,7 +177,7 @@ class App extends React.Component {
       
 
       <Router>
-           {/* <AppNavbar /> */}
+           <AppNavbar />
 
            {/* <AppHeader isAuthenticated={this.state.isAuthenticated} 
             currentUser={this.state.currentUser} 

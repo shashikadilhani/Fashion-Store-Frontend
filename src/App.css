@@ -20,11 +20,14 @@
  .nav1{
   background-color: rgb(50, 44, 51);
    height:25mm;
+   /* margin-top: -15mm; */
+   font-size: large;
  }
 .navitem{
   margin-left:30px;
   margin-right:30px;
   color: #e2e6e7;
+  margin-top: -5mm;
 }
 
 .navdiv{
@@ -33,6 +36,7 @@
   /* border: 4mm; */
   /* border-width: 15mm;
   border-color: chartreuse; */
+  /* height: 7mm; */
   cursor: pointer;
 }
 
@@ -44,7 +48,7 @@
     transform: rotate(360deg);
   }
 }
-
+ 
  
 
  
