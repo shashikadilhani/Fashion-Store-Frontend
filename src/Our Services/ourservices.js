@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import './ourservices.css';
+import { Link } from 'react-router-dom';
+import Cloths from './cloths';
 
 class Services extends Component {
     render () {
@@ -34,7 +36,9 @@ class Services extends Component {
                                     Looking for PETS? <br></br>
                                     
                                     Find lots of pets and give your love for them !
-                                     </div>    
+                                     </div>   
+                                     <Link to="/services" className="read-more">Read More</Link> 
+
                             </Grid>
 
                             <Grid className="os21">
