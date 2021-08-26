@@ -1,23 +1,21 @@
 // import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
-// import './App.css';
 import AppNavbar from './AppNavbar';
-// import Login from './Auth/Login/login';
 import Auth from './Auth/Signup/Auth'
-// import Signup from './Auth/Signup/Auth';
 import Home from './Home/Home';
 import men from './item/men';
 import women from './item/women';
 import kids from './item/kids';
 import adult from './Our Services/ourservices';
-// import Party from './item/party';
 import Party from './aboutus/aboutus';
 
 import blouse from './womenitemtypes/blouse';
 import saree from './womenitemtypes/saree';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Cloths from './Our Services/cloths'
 //slack
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -196,6 +194,10 @@ class App extends React.Component {
                 <Route path="/woman" exact component={women} />
                 <Route path="/adult" exact component={adult} />
                 <Route path="/party" exact component={Party} />
+
+                <Route path="/cloths" exact component={Cloths} />
+
+
                 <Route path="/our_services" exact component={Service} />
 
                 <Route path="/blouse" exact component={blouse} />

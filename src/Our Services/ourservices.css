@@ -11,14 +11,13 @@
     width: 80mm;
     margin-left: 10mm;
     margin-top: 10mm;
-    height: 150mm;
+    height: 120mm;
     /* border-style: solid; */
     box-shadow: blueviolet;
     box-shadow: 3mm;
     border-width: 0.2mm;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* border-radius: 2mm; */
-    /* border-color: rgb(38, 145, 172); */
+    text-align: center;
 }
 
 

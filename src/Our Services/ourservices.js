@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import './ourservices.css';
 import { Link } from 'react-router-dom';
-import Cloths from './cloths';
 
 class Services extends Component {
     render () {
@@ -37,7 +36,7 @@ class Services extends Component {
                                     
                                     Find lots of pets and give your love for them !
                                      </div>   
-                                     <Link to="/services" className="read-more">Read More</Link> 
+                                     <Link to="/cloths" className="read-more">Read More</Link> 
 
                             </Grid>
 
@@ -50,7 +49,8 @@ class Services extends Component {
                                     Looking for pet ACCESSORIES ? <br></br>   
                                      
                                     Find all accosseries for good prices!
-                                    </div>       
+                                    </div>
+                                    <Link to="/services" className="read-more">Read More</Link>        
                             </Grid>
 
                             <Grid className="os21">
@@ -61,7 +61,8 @@ class Services extends Component {
                                     Looking for HEALTH CARE ? <br></br>   
                                     
                                     Keep your pets healthy!
-                                    </div>    
+                                    </div> 
+                                    <Link to="/services" className="read-more">Read More</Link>    
                             </Grid>
 
                             <Grid className="os21">
@@ -72,7 +73,8 @@ class Services extends Component {
                                     Looking for Pet CONSULTATION ? <br></br>   
                                     
                                     Keep happy smile of your pet!
-                                    </div>         
+                                    </div>  
+                                    <Link to="/cloths" className="read-more">Read More</Link>        
                             </Grid>
 
                     </Grid>
@@ -86,7 +88,8 @@ class Services extends Component {
                                     Looking for Home VISITS ? <br></br>   
                                     
                                     we are available! 
-                                    </div>         
+                                    </div> 
+                                    <Link to="/services" className="read-more">Read More</Link>         
                             </Grid>
 
                             <Grid className="os21">
@@ -97,7 +100,8 @@ class Services extends Component {
                                     DONATION Availabe!  <br></br>   
                                                                      and take good care of them.<br></br>
                                     Help them and join with us!
-                                    </div>        
+                                    </div> 
+                                    <Link to="/services" className="read-more">Read More</Link>        
                             </Grid>
 
                             <Grid className="os21">
@@ -108,7 +112,8 @@ class Services extends Component {
                                     Looking for a unique HOME ? <br></br>   
                                     
                                     Keep your pets with us!
-                                    </div>        
+                                    </div>
+                                    <Link to="/services" className="read-more">Read More</Link>         
                             </Grid>
 
                     </Grid>
