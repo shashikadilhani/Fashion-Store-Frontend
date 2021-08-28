@@ -46,63 +46,98 @@ class Cloths extends Component{
             }
  
   render() {
-    return (    
-      
-        <Container className="feedback-container">
-                <Row>
-                    <h5>We Value Your Feedback</h5>
-                    <h5>Our Gallery</h5>
-                </Row>
-                <Row>
-                    <Col>
-                    <button className="btn1" onClick={this.onClickPrevious}> <i class="fa fa-caret-left" aria-hidden="true"></i> </button>
-                    </Col>
-                    <Col>
-                    <div className="gallery-div">
-                     
-                    <img src={this.state.picList[this.state.index]} style={{"maxHeight":"40%","maxWidth":"40%"}} /> <br/>
-                   
-                </div>
-                    </Col>
-                    <Col>
-                    <button style={{"margin-left":"5px", "fontSize":"18px"}} onClick={this.onClickNext}> <i class="fa fa-caret-right" aria-hidden="true"></i></button>
-          
-                    </Col>
-                
-                </Row>
-        </Container>
-     
-    // <Grid className="mengrid" direction='row' container  >
+    return (  
         
+            <>
+                <Grid>
+                <Container className="feedback-container">
+                            <Row className="rowtext">
+                                {/* <h5>We Value Your Feedback</h5> */}
+                                WOMENS
+                            </Row>
 
-    //     <Grid className="grid11"  >
-    //         <p>BLOUSES</p>
-    //     </Grid> 
-    //     <Grid className="grid12"  >
-    //     <p>                                          
-    //       SAREE
-    //     </p>
-    //     </Grid> 
+
+                            <Row className="row">
+                                <Col className="col1">
+                                <button className="btn1" onClick={this.onClickPrevious}> <i class="fa fa-caret-left" aria-hidden="true"></i> </button>
+                                </Col>
+                                <Col className="cls2">
+                                <div className="gallery-div">
+                                
+                                <img className="image" src={this.state.picList[this.state.index]} /> <br/>
+                            
+                            </div>
+                                </Col >
+                                <Col className="col3">
+                                <button className="btn2"  onClick={this.onClickNext}> <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                </Col>
+                            
+                            </Row> 
+
+                    </Container>
+
+                </Grid>
+
+
+                <Grid>
+                <Container className="feedback-container">
+                            <Row className="rowtext">
+                                {/* <h5>We Value Your Feedback</h5> */}
+                                MENS
+                            </Row>
+
+
+                            <Row className="row">
+                                <Col className="col1">
+                                <button className="btn1" onClick={this.onClickPrevious}> <i class="fa fa-caret-left" aria-hidden="true"></i> </button>
+                                </Col>
+                                <Col className="cls2">
+                                <div className="gallery-div">
+                                
+                                <img className="image" src={this.state.picList[this.state.index]} /> <br/>
+                            
+                            </div>
+                                </Col >
+                                <Col className="col3">
+                                <button className="btn2"  onClick={this.onClickNext}> <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                </Col>
+                            
+                            </Row> 
+
+                    </Container>
+
+                </Grid>
+
+                <Grid>
+                <Container className="feedback-container">
+                            <Row className="rowtext">
+                                {/* <h5>We Value Your Feedback</h5> */}
+                                KIDS
+                            </Row>
+
+
+                            <Row className="row">
+                                <Col className="col1">
+                                <button className="btn1" onClick={this.onClickPrevious}> <i class="fa fa-caret-left" aria-hidden="true"></i> </button>
+                                </Col>
+                                <Col className="cls2">
+                                <div className="gallery-div">
+                                
+                                <img className="image" src={this.state.picList[this.state.index]} /> <br/>
+                            
+                            </div>
+                                </Col >
+                                <Col className="col3">
+                                <button className="btn2"  onClick={this.onClickNext}> <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                </Col>
+                            
+                            </Row> 
+
+                    </Container>
+
+                </Grid>
+            </>
        
-    //     <Grid className="grid13" >
-    //     <p>                                          
-    //        GAWON
-    //     </p>
-
-    //     </Grid>
-    //     <Grid className="grid14"  >
-    //         <p>SKIRTS</p>
-
-    //     </Grid>
-    //     <Grid className="grid15">
-    //         <p>OFFICE WARE</p>
-    //     </Grid>
-    //     <Grid className="grid16"  >
-    //         <p>DENIMS</p>
-    //     </Grid>
-        
-
-    // </Grid> 
           
     );
   }

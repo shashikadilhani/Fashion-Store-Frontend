@@ -1,6 +1,15 @@
 .gallery-div{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* background-color: blueviolet; */
+    width: 150mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 500m;
+}
+.image{
+    /* height: 90mm; */
+    width: 150mm;
+    max-height: 100mm;
 }
 
 .gallery-button {
@@ -10,5 +19,50 @@
 .btn1{
     font-size: 18px ;
     padding-top: 10px;
-    background-color: blueviolet;
+    margin-top: 40mm;
+    /* background-color: rgb(196, 209, 16); */
+    margin-left: 0mm;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 60px;
+}
+.btn2{
+    font-size: 18px ;
+    padding-top: 10px;
+    margin-top: 40mm;
+    /* background-color: rgb(64, 65, 64); */
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 60px;
+    margin-left: 40mm;
+}
+
+.feedback-container{
+    /* background-color: aqua; */
+    height: 120mm;
+    /* background-color: violet; */
+}
+
+.cls2{
+    /* background-color: brown; */
+    height: 100mm;
+    /* width: 150mm; */
+}
+
+.row{
+    margin-top: 10mm;
+    /* background-color: crimson; */
+    height: 10mm;
+  
+}
+
+.col1{
+    /* background-color: darkblue; */
+    height: 80mm;
+    /* height: 10mm; */
+}
+
+.rowtext{
+    font-size: 8mm;
+    color: rgb(33, 148, 156);
 }
