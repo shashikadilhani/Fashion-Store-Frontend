@@ -35,12 +35,13 @@ class women extends Component{
       
     }
   render() {
-    return (    
-      
-         
-    <Grid className="kkk" direction='row' container  >
+    return (        
+      <>
+      <Grid className="womengrid">
+        <h5>WOMEN ITEMS</h5>
+      </Grid>
+        <Grid className="kkk" direction='row' container  >
         
-
         <Grid className="grid1"  >
         <Link to="/blouse" className="font" >BLOUSE</Link>
         </Grid> 
@@ -64,9 +65,8 @@ class women extends Component{
         <Grid className="grid6"  >
         <Link to="/party" className="font" >DENIM</Link>
         </Grid>
-        
-
     </Grid>
+      </>
           
     );
   }

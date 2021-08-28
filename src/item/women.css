@@ -1,8 +1,10 @@
 
 .grid1 {
     background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/blouse.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     min-height: 80mm;
     background-size: cover;
     animation: normal;
@@ -23,7 +25,7 @@
     grid-column-gap: 20px;
     padding-top: 5mm;
     padding-left: 5mm;
-    background-image: linear-gradient(to right, rgb(36, 34, 34) , rgb(94, 226, 215));
+    /* background-image: linear-gradient(to right, rgb(36, 34, 34) , rgb(94, 226, 215)); */
 }
 .grid1:hover{
     transition: 200ms;
@@ -33,8 +35,10 @@
 }
 .grid2 {
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/saree.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     min-height: 180mm;
     background-size: cover;
     animation: normal;
@@ -49,12 +53,15 @@
     text-align: center;
     font-size: 10mm;
     color: white;
+    
 }
 
 .grid3 {
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/gawon.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     min-height: 180mm;
     background-size: cover;
     animation: normal;
@@ -73,8 +80,10 @@
 }
 .grid4{
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/skirt.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     min-height: 180mm;
     background-size: cover;
     animation: normal;
@@ -94,7 +103,7 @@
 
 .grid5{
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/office.jpg");
     min-height: 180mm;
     background-size: cover;
@@ -110,12 +119,16 @@
     font-size: 10mm;
     color: white;
     width: 60mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .grid6{
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/denim.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     min-height: 180mm;
     background-size: cover;
     animation: normal;
@@ -158,6 +171,7 @@
     border: 3px;
     border-color: rgb(245, 242, 242);
     border-style: solid;
+    
 }
 
 
@@ -311,6 +325,21 @@
     font-size: 8mm;
     
 }
+
+.womengrid{ 
+    /* background-color: rgb(100, 155, 152); */
+    height: 100mm;
+    background-size: cover;
+    color: rgb(7, 6, 6);
+    text-align: center;
+    font-size: 10mm; 
+    /* background-color: aquamarine;  */
+}
+.h5{
+    margin-top: 200mm;
+}
+ 
+
 
 
  
