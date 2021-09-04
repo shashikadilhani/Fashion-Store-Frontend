@@ -40,8 +40,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    color: white;
-        
+    color: white;    
 }
  
 .body{
@@ -55,5 +54,46 @@ color: white;
     color: white;
 }
 
+.col1{
+    background-image:
+    url("../assets/f3.jpg");
+    margin-right: 10mm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: lightgoldenrodyellow;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgb(82, 14, 61), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 6mm;
+}
+ 
+.col2{
+    background-image:
+    url("../assets/f3.jpg");
+    margin-right: 10mm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+   
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgb(82, 14, 61), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+ 
+.col3{
+    background-image:
+    url("../assets/f3.jpg");
+    margin-right: 10mm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgb(82, 14, 61), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
  
  

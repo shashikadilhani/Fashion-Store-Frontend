@@ -1,8 +1,9 @@
 .footer-Home{
-    background-color: #144f4c;
+    background-color: #310c1c;
     background-attachment: fixed;
     position: relative;
     line-height: 30px;
+    margin-top: 80mm;
 }
 
 .footer-topic{

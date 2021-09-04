@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Home.css';
 import { withCookies } from 'react-cookie';
-import { Container} from 'react-bootstrap';
 import { Navbar, NavLink } from 'reactstrap';
 import Footer from '../footer/footer'
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Home extends Component {
  
@@ -11,8 +11,7 @@ class Home extends Component {
     
     return (   
       
-         <>
-          
+         <> 
               <div className="landing">
                   <Navbar className="nav2" >  
                     <NavLink href="/kids" className="nav4">KIDS</NavLink>
@@ -41,8 +40,20 @@ class Home extends Component {
                   <h1>THE BEST CLOTHING STORE</h1>
                   Their target market seeks high-quality products and they don't mind paying extra for it. Business objectives are the goals of a company. High-end clothing stores have specialized objectives to make the store better besides increasing sales and employee satisfaction like any other business.</p>
               </div>
-             
-              <Footer />
+ 
+
+            {/* <Container> */}
+              <Row>
+                <Col className="col1">OUR SERVICES</Col>
+                <Col className="col2">gljhekg</Col>
+                <Col className="col3">gljhekg</Col>  
+              </Row>
+              
+            {/* </Container> */}
+
+            <Footer />
+
+               
               </> 
           
     );
