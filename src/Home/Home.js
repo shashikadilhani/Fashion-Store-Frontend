@@ -44,9 +44,56 @@ class Home extends Component {
 
             {/* <Container> */}
               <Row>
-                <Col className="col1">OUR SERVICES</Col>
-                <Col className="col2">gljhekg</Col>
-                <Col className="col3">gljhekg</Col>  
+                <Col className="col1">
+                  
+                  <br></br>
+                  OUR SERVICES
+                  <br></br>
+                  
+                  <p className="cardbody">
+                  Their target market seeks high-quality
+                   products and they don't mind paying extra for it.
+                    Business objectives are the goals of a company. 
+                    High-end clothing stores have specialized objectives 
+                    to make the store better besides increasing sales and 
+                    employee satisfaction like any other business.
+                  </p>
+
+                  <button onClick="sdff" className="homebtn">View more..</button>
+                  </Col>
+                <Col className="col2">
+                <br></br>
+                ABOUT Us
+                  <br></br>
+                  
+                  <p className="cardbody">
+                  Their target market seeks high-quality
+                   products and they don't mind paying extra for it.
+                    Business objectives are the goals of a company. 
+                    High-end clothing stores have specialized objectives 
+                    to make the store better besides increasing sales and 
+                    employee satisfaction like any other business.
+                  </p>
+
+                  <button onClick="sdff" className="homebtn">View more..</button>
+                </Col>
+                <Col className="col3">
+                <br></br>
+                CONTACT US
+                  <br></br>
+                  
+                  <p className="cardbody">
+                  Their target market seeks high-quality
+                   products and they don't mind paying extra for it.
+                    Business objectives are the goals of a company. 
+                    High-end clothing stores have specialized objectives 
+                    to make the store better besides increasing sales and 
+                    employee satisfaction like any other business.
+                  </p>
+
+                  <button onClick="sdff" className="homebtn">View more..</button>
+                  
+                </Col>  
               </Row>
               
             {/* </Container> */}
