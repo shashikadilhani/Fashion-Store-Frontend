@@ -3,7 +3,7 @@ import React, {Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Aux from '../Auxx';
  
   
@@ -25,39 +25,47 @@ class men extends Component{
   render() {
     return (    
       
-         
-    <Grid className="mengrid" direction='row' container  >
-        
-
-        <Grid className="grid11"  >
-            <p>BLOUSES</p>
-        </Grid> 
-        <Grid className="grid12"  >
-        <p>                                          
-          SAREE
-        </p>
-        </Grid> 
-       
-        <Grid className="grid13" >
-        <p>                                          
-           GAWON
-        </p>
-
-        </Grid>
-        <Grid className="grid14"  >
-            <p>SKIRTS</p>
-
-        </Grid>
-        <Grid className="grid15">
-            <p>OFFICE WARE</p>
-        </Grid>
-        <Grid className="grid16"  >
-            <p>DENIMS</p>
-        </Grid>
-        
-
-    </Grid> 
+      <>
+      <Container>
+        <Row>
+          <Col className="mencol1">
           
+          </Col>
+
+          <Col className="mencol2">
+             MENS WARE
+
+             <Row className="menrow1">
+               <Col className="grid11">
+               <p>BLOUSES</p>
+               </Col>
+
+               <Col className="grid12">
+               <p>BLOUSES</p>
+               </Col>
+             </Row>
+
+             <Row className="menrow2">
+               <Col className="grid13">
+               <p>BLOUSES</p>
+               </Col>
+
+               <Col className="grid14">
+               <p>BLOUSES</p>
+               </Col>
+             </Row>
+          </Col>
+        </Row>
+
+      </Container>
+      
+      <div className="footermen">
+                        <span >
+                            © {new Date().getFullYear()}, made with{" "}
+                            <i className="fa fa-heart heart" /> by 2GCode
+                        </span>
+             </div>
+ </>         
     );
   }
 }

@@ -180,32 +180,39 @@
 
 .mengrid{
     grid-column-gap: 30px;
-    padding-top: 5mm;
+    padding-top:200mm;
     padding-left: 5mm;
     transition: 200ms;
     grid-column-end: 20mm;
     grid-row-gap: 5mm;
+    background-color: rgba(206, 241, 206, 0.925);
+    
 }
 
 .grid11 {
     background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/blouse.jpg");
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image2.jpg");
     height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
-    width: 90mm;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .grid12 {
     background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/saree.jpg");
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image3.jpeg");
     height: 90mm;
     background-size: cover;
     animation: normal;
@@ -214,67 +221,52 @@
     text-align: center;
     font-size: 10mm;
     color: white;
-    width: 90mm;
+    margin-left: 7mm;
+    width: 40mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .grid13 {
     background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/saree.jpg");
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image4.jpg");
     height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
-    width: 90mm;
+    width: 40mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .grid14 {
     background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/saree.jpg");
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image5.jpg");
     height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
+    margin-left: 7mm;
     text-align: center;
     font-size: 10mm;
     color: white;
-    width: 90mm;
-}
+    width: 40mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.grid15 {
-    background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/saree.jpg");
-    height: 90mm;
-    background-size: cover;
-    animation: normal;
-    cursor: pointer;
-    outline-width: 10mm;
-    text-align: center;
-    font-size: 10mm;
-    color: white;
-    width: 90mm;
-}
-
-.grid16 {
-    background-image:
-    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
-    url("../assets/saree.jpg");
-    height: 90mm;
-    background-size: cover;
-    animation: normal;
-    cursor: pointer;
-    outline-width: 10mm;
-    text-align: center;
-    font-size: 10mm;
-    color: white;
-    width: 90mm;
 }
 
 .grid11:hover{
@@ -336,11 +328,53 @@
     /* background-color: aquamarine;  */
 }
 
+.mencol1{
+    background-image:
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 250mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.mencol2{
+    font-size: 8mm;
+    font-weight: lighter;
+    
+}
+
+.menrow1{
+    width: 200mm;
+    height: 90mm;
+    /* padding-top: 10mm; */
+}
+
+.menrow2{
+    /* padding: 200px; */
+    width: 200mm;
+    padding-top: 90mm;
+    height: 90mm;
+}
+
 .footer{
     margin-top: 5mm;
     color: aliceblue;
     padding: 10px 0px 5px 0px;
     background-color: rgb(61, 122, 192);
+
+}
+
+.footermen{
+    margin-top: 250mm;
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+    background-color: rgb(61, 122, 192);
+
 }
 
  
