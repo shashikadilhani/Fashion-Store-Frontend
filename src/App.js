@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AppNavbar from './AppNavbar';
 import Auth from './Auth/Signup/Auth'
 import Home from './Home/Home';
+import About from './aboutus/aboutus';
 import men from './item/men';
 import women from './item/women';
 import kids from './item/kids';
@@ -188,6 +189,7 @@ class App extends React.Component {
             onLogout={this.handleLogout} /> */} 
                 <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/about_us" exact component={About} />
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />
                 <Route path="/womentypes" exact component={kids} />

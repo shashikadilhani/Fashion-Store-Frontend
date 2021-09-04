@@ -43,9 +43,9 @@ export default class AppNavbar extends Component {
           <Navbar className="nav1" >
             <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
             <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>
-            <NavLink href="/login" exact component={Login} className="navitem">Home</NavLink>
-            <NavLink href="/login" exact component={Login} className="navitem">AboutUs</NavLink>
+            <NavLink href="/about_us" exact component={Login} className="navitem">AboutUs</NavLink>
             <NavLink href="/our_services" exact component={Services} className="navitem">Our Services</NavLink>
+            <NavLink href="/login" exact component={Login} className="navitem">Contact</NavLink>
             <button onClick="sdff" className="navdiv">ORDER NOW</button> 
           </Navbar>
           </div>
