@@ -5,20 +5,29 @@
     url("../assets/blouse.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    min-height: 80mm;
+    /* min-height: 80mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
     transition: 200ms;
-    /* border-radius: 10px; */
-	/* border: 5px; */
-	/* border-color: rgb(109, 235, 197); */
-	/* border-style: solid; */
     text-align: center;
     font-size: 10mm;
     color: white;
-    width: 60mm;
+    width: 60mm; */
+    height: 90mm;
+    background-size: cover;
+    animation: normal;
+    cursor: pointer;
+    outline-width: 10mm;
+    text-align: center;
+    margin-left: 7mm;
+    font-size: 10mm;
+    color: white;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .kkk{
@@ -39,20 +48,19 @@
     url("../assets/saree.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    min-height: 180mm;
+    height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
-    transition: 200ms;
-    /* border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid; */
-    width: 60mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 
@@ -62,20 +70,19 @@
     url("../assets/gawon.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    min-height: 180mm;
+    height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
-    transition: 200ms;
-    /* border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid; */
-    width: 60mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
 }
 .grid4{
@@ -84,20 +91,19 @@
     url("../assets/skirt.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    min-height: 180mm;
+    height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
-    transition: 200ms;
-    /* border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid; */
-    width: 60mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -105,20 +111,19 @@
     background-image:
     /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/office.jpg");
-    min-height: 180mm;
+   
+    height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
-    transition: 200ms;
-    /* border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid; */
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
-    width: 60mm;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -129,20 +134,20 @@
     url("../assets/denim.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    min-height: 180mm;
+   
+    height: 90mm;
     background-size: cover;
     animation: normal;
     cursor: pointer;
     outline-width: 10mm;
-    transition: 200ms;
-    /* border-radius: 10px;
-	border: 5px;
-	border-color: rgb(109, 235, 197);
-	border-style: solid; */
-    width: 60mm;
     text-align: center;
+    margin-left: 7mm;
     font-size: 10mm;
     color: white;
+    width: 30mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid2:hover{
@@ -172,6 +177,47 @@
     border-color: rgb(245, 242, 242);
     border-style: solid;
     
+}
+
+
+
+.womencol1{
+    background-image:
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/men/image10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 250mm;
+    box-shadow: 3mm;
+    border-width: 0.2mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.womencol2{
+    font-size: 8mm;
+    font-weight: lighter;
+    
+}
+
+.womenrow1{
+    width: 200mm;
+    height: 90mm;
+    background-color: lightpink;
+}
+
+.womenrow2{
+    width: 200mm;
+    padding-top: 90mm;
+    /* height: 90mm; */
+    /* background-color: rgb(235, 78, 16); */
+}
+.womenrow3{
+    width: 200mm;
+    padding-top: 90mm;
+    /* height: 90mm; */
+ 
 }
 
 
@@ -371,6 +417,14 @@
 
 .footermen{
     margin-top: 250mm;
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+    background-color: rgb(61, 122, 192);
+
+}
+
+.footerwomen{
+    margin-top: 330mm;
     color: aliceblue;
     padding: 10px 0px 5px 0px;
     background-color: rgb(61, 122, 192);

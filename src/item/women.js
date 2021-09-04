@@ -35,47 +35,99 @@ class women extends Component{
       
     }
   render() {
-    return (        
+    return ( 
+      
       <>
-      <Grid className="womengrid">
-        <h5>WOMEN ITEMS</h5>
-        hke
-      </Grid>
-        <Grid className="kkk" direction='row' container  >
-        
-        <Grid className="grid1"  >
-        <Link to="/blouse" className="font" >BLOUSE</Link>
-        </Grid> 
+      <Container>
+        <Row>
+          <Col className="womencol1">
+          
+          </Col>
 
-        <Grid  className="grid2" >
-        <Link to="/saree" className="font" >SAREE</Link>
-        </Grid> 
-       
-        <Grid className="grid3" >
-        <Link to="/party" className="font" >FROCK</Link>
-        </Grid>
+          <Col className="womencol2">
+             MENS WARE
 
-        <Grid className="grid4"  >
-        <Link to="/party" className="font" >SKIRT</Link>
-        </Grid>
+             <Row className="womenrow1">
+               <Col className="grid1">
+               <p>BLOUSES</p>
+               </Col>
 
-        <Grid className="grid5">
-        <Link to="/party" className="font" >OFFICE</Link>
-        </Grid>
+               <Col className="grid2">
+               <p>BLOUSES</p>
+               </Col>
+             </Row>
 
-        <Grid className="grid6"  >
-        <Link to="/party" className="font" >DENIM</Link>
-        </Grid>
-    </Grid>
-  
+             <Row className="womenrow2">
+               <Col className="grid3">
+               <p>BLOUSES</p>
+               </Col>
 
-    <div className="footer">
+               <Col className="grid4">
+               <p>BLOUSES</p>
+               </Col>
+             </Row>
+
+             <Row className="womenrow3">
+               <Col className="grid5">
+               <p>BLOUSES</p>
+               </Col>
+
+               <Col className="grid6">
+               <p>BLOUSES</p>
+               </Col>
+             </Row>
+          </Col>
+        </Row>
+
+      </Container>
+      
+      <div className="footerwomen">
                         <span >
                             © {new Date().getFullYear()}, made with{" "}
                             <i className="fa fa-heart heart" /> by 2GCode
                         </span>
-    </div>
-      </>
+     </div>
+ </>         
+    //   <>
+    //   <Grid className="womengrid">
+    //     <h5>WOMEN ITEMS</h5>
+    //     hke
+    //   </Grid>
+    //     <Grid className="kkk" direction='row' container  >
+        
+    //     <Grid className="grid1"  >
+    //     <Link to="/blouse" className="font" >BLOUSE</Link>
+    //     </Grid> 
+
+    //     <Grid  className="grid2" >
+    //     <Link to="/saree" className="font" >SAREE</Link>
+    //     </Grid> 
+       
+    //     <Grid className="grid3" >
+    //     <Link to="/party" className="font" >FROCK</Link>
+    //     </Grid>
+
+    //     <Grid className="grid4"  >
+    //     <Link to="/party" className="font" >SKIRT</Link>
+    //     </Grid>
+
+    //     <Grid className="grid5">
+    //     <Link to="/party" className="font" >OFFICE</Link>
+    //     </Grid>
+
+    //     <Grid className="grid6"  >
+    //     <Link to="/party" className="font" >DENIM</Link>
+    //     </Grid>
+    // </Grid>
+  
+
+    // <div className="footer">
+    //                     <span >
+    //                         © {new Date().getFullYear()}, made with{" "}
+    //                         <i className="fa fa-heart heart" /> by 2GCode
+    //                     </span>
+    // </div>
+    //   </>
           
     );
   }
