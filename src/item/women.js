@@ -39,6 +39,7 @@ class women extends Component{
       <>
       <Grid className="womengrid">
         <h5>WOMEN ITEMS</h5>
+        hke
       </Grid>
         <Grid className="kkk" direction='row' container  >
         
@@ -66,6 +67,14 @@ class women extends Component{
         <Link to="/party" className="font" >DENIM</Link>
         </Grid>
     </Grid>
+  
+
+    <div className="footer">
+                        <span >
+                            © {new Date().getFullYear()}, made with{" "}
+                            <i className="fa fa-heart heart" /> by 2GCode
+                        </span>
+    </div>
       </>
           
     );

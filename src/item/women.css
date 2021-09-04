@@ -335,6 +335,14 @@
     font-size: 10mm; 
     /* background-color: aquamarine;  */
 }
+
+.footer{
+    margin-top: 5mm;
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+    background-color: rgb(61, 122, 192);
+}
+
  
  
 
