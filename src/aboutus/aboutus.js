@@ -6,6 +6,7 @@ import './aboutus.css';
 class aboutus extends Component {
     render () {
       return (
+        <>
         
               <Grid Container>
                    <Grid className="row1" direction='column'>
@@ -27,6 +28,13 @@ class aboutus extends Component {
                     </Grid>
                    
              </Grid>
+              <div className="copyright2">
+                        <span >
+                            © {new Date().getFullYear()}, made with{" "}
+                            <i className="fa fa-heart heart" /> by 2GCode
+                        </span>
+             </div>
+             </>
              
  
     //     <Grid className="kkk" direction='row' container  >
