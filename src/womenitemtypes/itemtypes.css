@@ -17,9 +17,9 @@
     text-align: center;
     font-size: 10mm;
      width: 60mm;
-     border: 2px;
-     border-color: rgb(19, 107, 107);
-     border-style: solid;
+     box-shadow: 3mm;
+     border-width: 0.2mm;
+     box-shadow: 0 4px 8px 0 rgba(252, 9, 9, 0.897), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card1{ 
@@ -30,9 +30,7 @@
     text-align: center;
     font-size: 10mm;
      width: 60mm;
-     border: 2px;
-     border-color: rgb(19, 107, 107);
-     border-style: solid;
+    
   
 }
 .cv{
@@ -75,21 +73,8 @@
   }
 
   .btn{
-      border-radius: 1mm;
-      height: 8mm;
-      font-size: 3mm;
-      text-align: center;
-      width: 27mm; 
-      border: 5mm;
-      border-width: 3mm;
-      background-color: rgb(71, 175, 158);
+      margin-top: 30mm;
   }
-  .btn2{
-    height: 8mm;
-    font-size: 3mm;
-    text-align: center;
-    width: 45mm;   
-}
 
   .class1{
     font-size: 5mm;
@@ -97,64 +82,14 @@
     margin-bottom: 0mm;
     height: 4mm;
 }
-
-/* .CardContent1{
-    color: lightcyan;
-} */
-
-  /* .card-block{
-      background-color: violet;
  
-      
-  } */ 
-
-   /* .card-title{
-       width: 60mm;
-       max-height: 5mm;
-   } */
-   /* .card-footer-1{
-       
-       background-color: tomato;
-       min-width: 60mm;
-       max-width: 60mm;
-       height: 8mm;
-   }
-
-   .card-footer-2{
- 
-   
-    min-width: 60mm;
-    max-width: 60mm;
-    
-  
-} */
-
-/* .button{
-    width: 20mm;
-    border-color: rgb(180, 23, 146);
-    border-radius: 0mm;
-    border-width: 0.3mm;
-    background-color: rgb(255, 255, 246);
-    padding: 2mm;
-} */
-
 .divnav{
-    /* height: 0mm; */
-    background-color: rgb(19, 107, 107);
+    color: black;
+    font-weight: lighter;
     height: 12mm;
-    color: aliceblue;
-    text-align: center;
-    font-size: 5mm;
-    font-style: italic;
-    
+    text-align: left;
+    font-size: 8mm;
+    margin-top: 5mm;  
 }
-
-/* s */
-
-/* .card-deck{
-    margin-top: 0mm;
-    padding: 2mm;
-    
-} */
 
  

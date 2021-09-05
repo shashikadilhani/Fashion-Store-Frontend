@@ -65,7 +65,7 @@ class women extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link> 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
              </Row>
 
@@ -77,7 +77,7 @@ class women extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link> 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
 
                <Col className="grid4">
@@ -87,7 +87,7 @@ class women extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link> 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
              </Row>
 
@@ -99,7 +99,7 @@ class women extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link> 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
 
                <Col className="grid6">
@@ -109,7 +109,7 @@ class women extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link> 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
              </Row>
           </Col>

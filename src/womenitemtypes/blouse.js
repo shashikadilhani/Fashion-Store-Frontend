@@ -33,46 +33,43 @@ class blouse extends Component{
 
   render() {
     return (
+      <>
+          <div>
 
-      <div>
+          <div className="divnav">
+            Ladies Blouse
+          </div>
+          <Grid className="grid" direction='row' container  >
 
-        <div className="divnav">
-          Ladies Blouse
-        </div>
-         <Grid className="grid" direction='row' container  >
+              {this.state.items.map((item) => (
 
-            {this.state.items.map((item) => (
+                // <div>
+                //   <img src={`data:image/jpeg;base64,${item.image}`} />
+                // </div>
 
-              // <div>
-              //   <img src={`data:image/jpeg;base64,${item.image}`} />
-              // </div>
-
-              <Card className="card1" >
-              <CardMedia className="media"
-          
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className="content1">
-              {<img width = '200'height='200' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${item.image} `} />}
-              {/* <img src="data:image/png;base64," alt="Red dot" /> */}
-              </CardContent>
-              {/* <div className="class1">{item.price}</div> */}
-              <CardActions className="action1"  direction='row'>
-                <Button className="btn">
-                  Rs. {item.price}
-                </Button>
-                <Button className="btn">
-                  View
-                </Button>
-                {/* <Button className="btn">
-                  -
-                </Button> */}
-              </CardActions>
-            </Card>
-          ))}           
-          </Grid>
-      </div>                      
+                <Card className="card1" >
+                <CardMedia className="media"
+            
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+                <CardContent className="content1">
+                {<img width = '200'height='200' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${item.image} `} />}
+                </CardContent>
+              
+                <CardActions className="action1"  direction='row'>
+                  <Button className="btn">
+                    Rs. {item.price}
+                  </Button>
+                  <Button className="btn">
+                    View
+                  </Button> 
+                </CardActions>
+              </Card>
+            ))}           
+            </Grid>
+          </div>   
+      </>                   
     );
   }
 }
