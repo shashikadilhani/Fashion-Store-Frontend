@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Container, Row, Col } from 'react-bootstrap';
 import Aux from '../Auxx';
+import { Link } from 'react-router-dom';
  
   
 class men extends Component{
@@ -37,21 +38,45 @@ class men extends Component{
 
              <Row className="menrow1">
                <Col className="grid11">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link>
                </Col>
 
                <Col className="grid12">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link>
                </Col>
              </Row>
 
              <Row className="menrow2">
                <Col className="grid13">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link>
                </Col>
 
                <Col className="grid14">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link>
                </Col>
              </Row>
           </Col>

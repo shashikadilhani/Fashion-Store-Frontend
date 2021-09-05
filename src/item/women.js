@@ -45,35 +45,71 @@ class women extends Component{
           </Col>
 
           <Col className="womencol2">
-             MENS WARE
+             WOMENS WARE
 
              <Row className="womenrow1">
                <Col className="grid1">
-               <p>BLOUSES</p>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/blouse" className="findmore">Find More</Link> 
                </Col>
 
                <Col className="grid2">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link> 
                </Col>
              </Row>
 
              <Row className="womenrow2">
                <Col className="grid3">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link> 
                </Col>
 
                <Col className="grid4">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link> 
                </Col>
              </Row>
 
              <Row className="womenrow3">
                <Col className="grid5">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link> 
                </Col>
 
                <Col className="grid6">
-               <p>BLOUSES</p>
+               <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+               <Link to="/cloths" className="findmore">Find More</Link> 
                </Col>
              </Row>
           </Col>

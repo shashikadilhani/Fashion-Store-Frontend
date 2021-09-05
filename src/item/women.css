@@ -1,7 +1,7 @@
 
 .grid1 {
     background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/blouse.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -44,7 +44,7 @@
 }
 .grid2 {
     background-image:
-    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/saree.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -66,7 +66,7 @@
 
 .grid3 {
     background-image:
-    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/gawon.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -87,7 +87,7 @@
 }
 .grid4{
     background-image:
-    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/skirt.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -109,7 +109,7 @@
 
 .grid5{
     background-image:
-    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/office.jpg");
    
     height: 90mm;
@@ -130,7 +130,7 @@
 
 .grid6{
     background-image:
-    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)),
     url("../assets/denim.jpg");
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -184,7 +184,7 @@
 .womencol1{
     background-image:
     /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
-    url("../assets/men/image10.jpg");
+    url("../assets/women/image2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -204,7 +204,6 @@
 .womenrow1{
     width: 200mm;
     height: 90mm;
-    background-color: lightpink;
 }
 
 .womenrow2{
@@ -237,7 +236,7 @@
 
 .grid11 {
     background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(245, 241, 241, 0.068)),
     url("../assets/men/image2.jpg");
     height: 90mm;
     background-size: cover;
@@ -257,7 +256,7 @@
 
 .grid12 {
     background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(245, 241, 241, 0.068)),
     url("../assets/men/image3.jpeg");
     height: 90mm;
     background-size: cover;
@@ -277,7 +276,7 @@
 
 .grid13 {
     background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(245, 241, 241, 0.068)),
     url("../assets/men/image4.jpg");
     height: 90mm;
     background-size: cover;
@@ -297,7 +296,7 @@
 
 .grid14 {
     background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(245, 241, 241, 0.068)),
     url("../assets/men/image5.jpg");
     height: 90mm;
     background-size: cover;
@@ -429,6 +428,12 @@
     padding: 10px 0px 5px 0px;
     background-color: rgb(61, 122, 192);
 
+}
+
+.findmore{
+    font-size: 5mm;
+    padding-top: 100mm;
+    color: aliceblue;
 }
 
  
