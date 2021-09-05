@@ -10,6 +10,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Image from 'react-bootstrap/Image'
+import { Container, Row, Col } from 'reactstrap';
 
 
 import Aux from '../Auxx';
@@ -34,11 +35,13 @@ class blouse extends Component{
   render() {
     return (
       <>
-          <div>
+          <div className="divnav2">
 
-          <div className="divnav">
-            Ladies Blouse
-          </div>
+       
+            <div className="divnav">
+              LADEIES BLOUSE
+            </div>
+   
           <Grid className="grid" direction='row' container  >
 
               {this.state.items.map((item) => (
