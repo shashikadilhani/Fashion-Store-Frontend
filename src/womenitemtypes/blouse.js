@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Popupbtn from '../popup/button';
 import Typography from '@material-ui/core/Typography';
 import Image from 'react-bootstrap/Image'
 import { Container, Row, Col } from 'reactstrap';
@@ -64,9 +65,7 @@ class blouse extends Component{
                   <Button className="btn">
                     Rs. {item.price}
                   </Button>
-                  <Button className="btn">
-                    View
-                  </Button> 
+                  <Popupbtn />
                 </CardActions>
               </Card>
             ))}           
