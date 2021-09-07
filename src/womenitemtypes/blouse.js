@@ -65,7 +65,7 @@ class blouse extends Component{
                   <Button className="btn">
                     Rs. {item.price}
                   </Button>
-                  <Popupbtn />
+                  <Popupbtn item={item} />
                 </CardActions>
               </Card>
             ))}           
