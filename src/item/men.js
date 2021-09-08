@@ -44,7 +44,7 @@ class men extends Component{
                  <br></br>
                  <br></br>
                  
-               <Link to="/cloths" className="findmore">Find More</Link>
+               <Link to="/shirt" className="findmore">Find More</Link>
                </Col>
 
                <Col className="grid12">

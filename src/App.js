@@ -11,8 +11,9 @@ import kids from './item/kids';
 import adult from './Our Services/ourservices';
 import Party from './aboutus/aboutus';
 
-import blouse from './womenitemtypes/blouse';
-import saree from './womenitemtypes/saree';
+import blouse from './itemtypes/blouse';
+import saree from './itemtypes/saree';
+import Shirt from './itemtypes/shirt';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -204,6 +205,7 @@ class App extends React.Component {
 
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
+                <Route path="/shirt" exact component={Shirt} />
 
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>

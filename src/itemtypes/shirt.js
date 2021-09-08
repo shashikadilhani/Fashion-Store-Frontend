@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import './itemtypes.css';
 import ItemService from '../Service/ItemService';
 import { Button } from 'reactstrap';
-// import Image from 'react-bootstrap';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -16,7 +15,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 import Aux from '../Auxx';
   
-class blouse extends Component{
+class Shirt extends Component{
 
         constructor(){
           super();
@@ -36,11 +35,11 @@ class blouse extends Component{
   render() {
     return (
       <>
-          <div className="divnav2">
+          <div className="menback">
 
        
             <div className="divnav">
-              LADEIES BLOUSE
+              MEN'S SHIRT
             </div>
    
           <Grid className="grid" direction='row' container  >
@@ -70,12 +69,18 @@ class blouse extends Component{
               </Card>
             ))}           
             </Grid>
-          </div>   
+          </div>  
+          <div className="footerstyle">
+                        <span >
+                            © {new Date().getFullYear()}, made with{" "}
+                            <i className="fa fa-heart heart" /> by SHASHIKA DILHANI
+                        </span>
+             </div> 
       </>                   
     );
   }
 }
 
-export default blouse;
+export default Shirt;
 
  
