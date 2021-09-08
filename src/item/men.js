@@ -87,7 +87,7 @@ class men extends Component{
       <div className="footermen">
                         <span >
                             © {new Date().getFullYear()}, made with{" "}
-                            <i className="fa fa-heart heart" /> by 2GCode
+                            <i className="fa fa-heart heart" /> by SHASHIKA DILHANI
                         </span>
              </div>
  </>         

@@ -20,7 +20,7 @@ function Button(props) {
     {isOpen && <Popup
       content={<>
 
-        <Row>
+        <Row >
             <Col className="popupcol1">
             {<img width = '300'height='300' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${props.item.image} `} />}
             </Col>

@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 function Footer() {
     return (
         <footer className="footer-Home">
-            <Container className="con">
+            {/* <Container className="con"> */}
                 <Row className="footer-row">
                     <Col lg="3" md="6">
                         <h5 className="footer-topic">Address</h5>
@@ -36,11 +36,11 @@ function Footer() {
                     <div className="copyright">
                         <span >
                             © {new Date().getFullYear()}, made with{" "}
-                            <i className="fa fa-heart heart" /> by 2GCode
+                            <i className="fa fa-heart heart" /> by SHASHIKA DILHANI
                         </span>
                     </div>
                 </Row>
-            </Container>
+            {/* </Container> */}
         </footer>
     );
 }

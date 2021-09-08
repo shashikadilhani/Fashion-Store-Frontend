@@ -127,7 +127,7 @@ class Services extends Component {
              <div className="copyright2">
                         <span >
                             © {new Date().getFullYear()}, made with{" "}
-                            <i className="fa fa-heart heart" /> by 2GCode
+                            <i className="fa fa-heart heart" /> by SHASHIKA DILHANI
                         </span>
              </div>
         </>
