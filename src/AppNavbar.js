@@ -12,7 +12,6 @@ import {
     NavbarToggler,
     Dropdown,
     DropdownToggle,
-    DropdownMenu,
     InputGroupAddon,
     InputGroup,
     Input,
@@ -20,7 +19,8 @@ import {
     NavItem,
     Button,
     NavbarBrand,Container
-  } from "reactstrap";
+  } from "react-bootstrap";
+  import { DropdownItem } from 'reactstrap';
 import { NavDropdown } from 'react-bootstrap';
 
 export default class AppNavbar extends Component {
@@ -41,12 +41,23 @@ export default class AppNavbar extends Component {
         <>
           <div className="div">
           <Navbar className="nav1" >
+            <NavLink href="/home" exact component={Login} className="fa fa-home home"></NavLink>
             <NavLink href="/login" exact component={Login} className="navitem">Login</NavLink>
             <NavLink href="/signup" exact component={Auth} className = "navitem">Signup</NavLink>
             <NavLink href="/about_us" exact component={Login} className="navitem">AboutUs</NavLink>
             <NavLink href="/our_services" exact component={Services} className="navitem">Our Services</NavLink>
             <NavLink href="/login" exact component={Login} className="navitem">Contact</NavLink>
+            <NavItem className="navitem2">Items</NavItem>
+            
+            <NavDropdown> 
+                <DropdownItem>Women</DropdownItem>
+                <DropdownItem>Men</DropdownItem>
+                <DropdownItem>Kids</DropdownItem>
+                <DropdownItem>Adults</DropdownItem>
+            </NavDropdown>
             <button onClick="sdff" className="navdiv">ORDER NOW</button> 
+
+            
           </Navbar>
           </div>
           </>
