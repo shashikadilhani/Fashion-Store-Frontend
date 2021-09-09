@@ -9,27 +9,29 @@
  
  .nav1{
   background-color: rgb(50, 44, 51);
-   height:15mm;
-   width: 190mm;
+   /* height:15mm;
+   width: 250mm; */
    font-size: large;
-    
+   font-weight: lighter;
+ }
+
+ i{
+   margin-left: 5mm;
  }
 
  .div{
   background-color: rgb(50, 44, 51);
  }
+
+ 
 .navitem{
  
-  margin-left: 00mm;
-  margin-right: 5mm;
+  /* margin-left: 00mm;
+  margin-right: 5mm; */
+  /* align-items: center; */
+  color: aliceblue;
 }
-
-.navitem2{
-  color: #e2e6e7;
-  margin-left: 00mm;
-  margin-right: 5mm;
-  width: 2mm;
-}
+ 
 
 .navdiv{
   background-color: rgb(26, 3, 20);
@@ -42,6 +44,7 @@
   font-size: 3mm;
   color: rgb(245, 248, 248);
   font-weight: lighter;
+  margin-left: 170mm;
 }
 
 @keyframes App-logo-spin {

@@ -12,6 +12,13 @@
     padding-left: 30mm;
     color: rgb(253, 253, 255);
     font-size: 5mm;
+    margin-left: 240mm;
+}
+
+.navitem2{
+    margin-left: 5mm;
+    color: ivory;
+    font-weight: lighter;
 }
 
 .nav4{

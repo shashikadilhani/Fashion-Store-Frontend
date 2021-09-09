@@ -189,7 +189,7 @@ class App extends React.Component {
             currentUser={this.state.currentUser} 
             onLogout={this.handleLogout} /> */} 
                 <Switch>
-                <Route path="/" exact component={Home} />
+                <Route path="/home" exact component={Home} />
                 <Route path="/about_us" exact component={About} />
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import { withCookies } from 'react-cookie';
-import { Navbar, NavLink } from 'reactstrap';
+import { Navbar, NavLink } from 'react-bootstrap';
 import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
 
