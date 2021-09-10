@@ -22,13 +22,13 @@ function Button(props) {
 
         <Row >
             <Col className="popupcol1">
-            {<img width = '300'height='300' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${props.item.image} `} />}
+            {/* {<img width = '300'height='300' resizeMode='fit-to-context'quality='100' src={`data:image/jpeg;base64,${props.item.image} `} />} */}
             </Col>
             <Col className="popupcol2">
-                <Row className="popuprow1"> {props.item.item_name}</Row>
+                {/* <Row className="popuprow1"> {props.item.item_name}</Row>
                 <Row className="popuprow2">Price: {props.item.price}</Row>
                 <Row className="popuprow2">Price: {props.item.price}</Row>
-                <Row className="popuprow2">Price: {props.item.price}</Row>
+                <Row className="popuprow2">Price: {props.item.price}</Row> */}
             </Col>
         </Row>
         <Row className="popuprow3" >

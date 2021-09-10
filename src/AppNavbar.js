@@ -5,6 +5,7 @@ import Auth from './Auth/Signup/Auth';
 import Login from './Auth/Login/Login';
 import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';
+import Popup from './popup-profile/button';
 // import './styles/app.scss';
 import {
   Collapse,Navbar, NavLink,
@@ -49,7 +50,7 @@ export default class AppNavbar extends Component {
             <NavLink href="/login" exact component={Login} className="navitem">Contact</NavLink>
             <NavItem className="navitem2">Items</NavItem>
             
-            <NavDropdown> 
+            <NavDropdown className="navdrop"> 
                 <DropdownItem>Women</DropdownItem>
                 <DropdownItem>Men</DropdownItem>
                 <DropdownItem>Kids</DropdownItem>
@@ -57,7 +58,15 @@ export default class AppNavbar extends Component {
             </NavDropdown>
             <button onClick="sdff" className="navdiv">ORDER NOW</button> 
 
+            {/* use popupp */}
+
+            <Popup />
+            {/* <NavLink href="/home" exact component={Login} >
+            <img src={logo} alt="Logo" width="40" height="40" />
+            </NavLink> */}
+
             
+ 
           </Navbar>
           </div>
           </>

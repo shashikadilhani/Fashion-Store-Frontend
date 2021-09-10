@@ -24,13 +24,14 @@
  }
 
  
-.navitem{
- 
-  /* margin-left: 00mm;
-  margin-right: 5mm; */
-  /* align-items: center; */
+.navitem.nav-link{
   color: aliceblue;
 }
+
+.fa-home.nav-link{
+  color: rgb(255, 255, 255);
+}
+ 
  
 
 .navdiv{
