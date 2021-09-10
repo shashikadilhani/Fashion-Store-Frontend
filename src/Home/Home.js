@@ -5,7 +5,7 @@ import { Navbar, NavLink } from 'react-bootstrap';
 import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
 
-class Home extends Component {
+class Home extends React.Component {
  
   render() {
     

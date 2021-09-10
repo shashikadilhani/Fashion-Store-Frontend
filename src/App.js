@@ -1,8 +1,8 @@
 // import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,withRouter } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 import AppNavbar from './AppNavbar';
-import Auth from './Auth/Signup/Auth'
+import Auth from './newAuth/Signup'
 import Home from './Home/Home';
 import About from './aboutus/aboutus';
 import men from './item/men';
@@ -149,7 +149,7 @@ class App extends React.Component {
     this.loadCurrentUser();
   }
 
-  handleLogout(redirectTo="/", notificationType="success", description="You're successfully logged out.") {
+  handleLogout(redirectTo="/home", notificationType="success", description="You're successfully logged out.") {
     localStorage.removeItem(ACCESS_TOKEN);
 
     this.setState({
@@ -171,7 +171,7 @@ class App extends React.Component {
       description: "You're successfully logged in.",
     });
     this.loadCurrentUser();
-    this.props.history.push("/");
+    this.props.history.push("/home");
   }
 
   render() {
@@ -181,7 +181,8 @@ class App extends React.Component {
     return (
 
       
-
+        <>
+        
       <Router>
            <AppNavbar />
 
@@ -219,6 +220,7 @@ class App extends React.Component {
                 </Switch>     
         </Router>
 
+        </>
     );
   }
 }

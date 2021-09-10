@@ -25,33 +25,41 @@ const request = (options) => {
 };
 
 
-export function login(loginRequest) {
+// export function login(loginRequest) {
 
-    // return request({
-    //     url: API_BASE_URL + "/auth/login ",
-    //     method: 'POST',
-    //     body: JSON.stringify(loginRequest)
+//     // return request({
+//     //     url: API_BASE_URL + "/auth/login ",
+//     //     method: 'POST',
+//     //     body: JSON.stringify(loginRequest)
       
         
-    // });
+//     // });
 
-    const results = fetch({
-        url:  "http://localhost:8080/auth/login",
-        method: 'POST',
-        body: JSON.stringify(loginRequest),
+//     const results = fetch({
+//         url:  "http://localhost:8080/auth/login",
+//         method: 'POST',
+//         body: JSON.stringify(loginRequest),
         
         
-    }).then(result => console.log('success====:', result))
-    .catch(error => console.log('error============:', error));
+//     }).then(result => console.log('success====:', result))
+//     .catch(error => console.log('error============:', error));
 
-    return results;
+//     return results;
 
    
+// }
+
+export function login(loginRequest) {
+    return request({
+        url: "http://localhost:8080/auth/login",
+        method: 'POST',
+        body: JSON.stringify(loginRequest)
+    });
 }
 
 export function signup(signupRequest) {
     return request({
-        url: API_BASE_URL + "/auth/signup",
+        url: "http://localhost:8080/auth/register",
         method: 'POST',
         body: JSON.stringify(signupRequest)
     });
@@ -78,7 +86,7 @@ export function getCurrentUser() {
     }
 
     return request({
-        url: API_BASE_URL + "/user/me",
+        url: "http://localhost:8080/customer/user/me",
         method: 'GET'
     });
 }

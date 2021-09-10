@@ -6,6 +6,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    /* margin-top: 5mm; */
     }
      
     .p-box {
@@ -14,7 +15,7 @@
       margin: 0 auto;
       height: 25%;
       max-height: 70vh;
-      margin-top: calc(100vh - 85vh - 20px);
+      margin-top: calc(100vh - 85vh - 6px);
       padding: 20px;
       background-color: rgb(235, 231, 240);
       background-repeat: repeat;
@@ -32,14 +33,38 @@
    
   
   .p-popuprow1.nav-link{
-    font-size: 5mm;
+    font-size: 4mm;
     font-weight: lighter;
     text-align: center;
     color: rgb(12, 11, 11);
     
     height: 5mm;
     /* background-color:aqua ; */
-    padding-top: 0pt;
+    
+  }
+
+  .p-popuprow2.nav-link{
+    font-size: 4mm;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    
+    height: 5mm;
+    /* background-color:aqua ; */
+    padding-top: 8mm;
+  }
+
+  .p-popuprow3.nav-link{
+    font-size: 4mm;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    
+    height: 5mm;
+    /* background-color:aqua ; */
+    padding-top: 10mm;
+    margin-left: -35mm;
+    text-underline-position: below;
   }
   
   .p-popuprow2{
@@ -55,7 +80,7 @@
   }
   
   .p-popupbtn{
-    background-color: hsl(273, 84%, 75%);
+    background-color: hsl(280, 30%, 96%);
     border-radius: 3mm;
     font-weight: normal;
     cursor: pointer;
