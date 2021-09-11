@@ -7,7 +7,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class Home extends React.Component {
  
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentUser: this.props
+    }}
   render() {
+    console.log('mhfdjlf')
+    console.log('mhfdjlf'+ this.currentUser)
     
     return (   
       

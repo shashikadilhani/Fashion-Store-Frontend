@@ -1,6 +1,4 @@
-// import React from 'react';
-import { BrowserRouter as Router, Route, Switch,withRouter } from 'react-router-dom';
-import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router,Switch,Route,withRouter } from 'react-router-dom';
 import AppNavbar from './AppNavbar';
 import Auth from './newAuth/Signup'
 import Home from './Home/Home';
@@ -10,100 +8,21 @@ import women from './item/women';
 import kids from './item/kids';
 import adult from './Our Services/ourservices';
 import Party from './aboutus/aboutus';
-
 import blouse from './itemtypes/blouse';
 import saree from './itemtypes/saree';
 import Shirt from './itemtypes/shirt';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Cloths from './Our Services/cloths'
-//slack
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
-//  class App extends React.Component  {
-
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//         currentUser: null
-//     };
-// }
-
-// // componentDidMount() {
-// //     authenticationService.currentUser.subscribe(x => this.setState({ currentUser: x }));
-// // }
-
-// logout() {
-//     authenticationService.logout();
-//     history.push('/login');
-// }
-
-//  render() {
-//    return (
-//     <Router>
-//     <AppNavbar />
-//     <Container>
-//       <Row>
-//         <Col lg={12} className={"margin-top"}>
-//           <Switch>
-//             <Route path="/" exact component={Home} />
-//             <Route path="/login" exact component={Login} />
-//             <Route path="/signup" exact component={Auth} />
-//             <Route path="/men" exact component={men} />
-//             <Route path="/kids" exact component={kids} />
-//             <Route path="/womentypes" exact component={kids} />
-//             <Route path="/woman" exact component={women} />
-//             <Route path="/adult" exact component={adult} />
-//             <Route path="/party" exact component={party} />
-
-//             <Route path="/blouse" exact component={blouse} />
-//             <Route path="/saree" exact component={saree} />
-//             <Route path="/logout"
-//               exact
-//               component={() => (
-//                 <Login message="User Logged Out Successfully." />
-//               )}
-//             />
-//           </Switch>
-//         </Col>
-//       </Row>
-//     </Container>
-//   </Router>
-//    );
-//  }
-// }
-
-// export default App;
-
-
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-// import {
-//   Route,
-//   withRouter,
-//   Switch,
-//   BrowserRouter
-// } from 'react-router-dom';
-
-// import { BrowserRouter as Router } from 'react-router-dom';
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 import { getCurrentUser } from './util/APIUtills';
 import { ACCESS_TOKEN } from './constants/index';
-
- 
-import Login from './Auth/Login/Login';
-// import Signup from './Auth/Signup/Auth';
-// import Profile from '../user/profile/Profile';
+import Login from './Auth/Login/login';
 import AppHeader from './common/AppHeader';
 import NotFound from './common/NotFound';
 import LoadingIndicator from './common/LoadingIndicator';
 import PrivateRoute from './util/PrivetRoute';
-import Service from './Our Services/ourservices'
-
+import Service from './Our Services/ourservices';
 import { Layout, notification } from 'antd';
 const { Content } = Layout;
  
@@ -179,10 +98,7 @@ class App extends React.Component {
       return <LoadingIndicator />
     }
     return (
-
-      
-        <>
-        
+     
       <Router>
            <AppNavbar />
 
@@ -220,9 +136,9 @@ class App extends React.Component {
                 </Switch>     
         </Router>
 
-        </>
+      
     );
   }
 }
 
-export default App;
+export default withRouter(App);

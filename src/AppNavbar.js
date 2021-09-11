@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Collapse,Navbar, NavLink } from 'reactstrap';
 import './App.css';
 import Auth from './Auth/Signup/Auth';
-import Login from './Auth/Login/Login';
+import Login from './Auth/Login/login';
 import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';
 import Popup from './popup-profile/button';
