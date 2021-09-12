@@ -50,7 +50,7 @@ class Home extends React.Component {
  
 
             {/* <Container> */}
-              <Row>
+              <Row className="row2">
                 <Col className="col1">
                   
                   <br></br>
@@ -105,11 +105,8 @@ class Home extends React.Component {
               
             {/* </Container> */}
 
-            <Footer />
-
-               
+            <Footer />    
               </> 
-          
     );
   }
 }
