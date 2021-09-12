@@ -4,14 +4,12 @@
     margin: 0 auto;
     margin: 0 auto;
     margin-top: 40px;
-    background-color: yellow;
     height: 140mm;
     padding-top: 20px;
     background-image:
-    linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(247, 235, 235, 0.25)),
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(247, 235, 235, 0.25)), */
     url("../../assets/f7.jpg");
     background-size: cover;
-    border-radius: 5mm;
 }
 
 .login-container:hover{
@@ -25,7 +23,6 @@
 
 .clm1{
     background-image:
-   
    url("../../assets/f7.jpg");
    width: 200mm;
    height: 170mm;
@@ -65,21 +62,26 @@
 .plc{
     background-color: rgb(245, 245, 248);
     /* border: burlywood; */
+    height: 10mm;
+    border-width: 0px;
 }
 
-.plc2{
-    /* background-color: rgb(245, 245, 248); */
-    border: burlywood;
-    border-width: 1mm;
+.ant-input{
+    border-width: 0mm;
+    height: 10mm; 
 }
 
 .login-form-button{
-    background-color: rgb(250, 247, 244);
+    background-color: rgb(133, 219, 211);
     cursor: pointer;
     height: 10mm;
+    border-width: 0px;
+    border-radius: 5mm;
+
 }
 
 .link{
     color: white;
    padding-left: 20mm;
+   
 }
