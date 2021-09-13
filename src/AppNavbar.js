@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Collapse,Navbar, NavLink } from 'reactstrap';
 import './App.css';
-import Auth from './Auth/Signup/Auth';
+import Auth from './Auth/Signup/Signup';
 import Login from './Auth/Login/login';
 import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';

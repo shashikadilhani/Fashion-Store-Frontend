@@ -1,6 +1,6 @@
 import { BrowserRouter as Router,Switch,Route,withRouter } from 'react-router-dom';
 import AppNavbar from './AppNavbar';
-import Auth from './newAuth/Signup'
+import Auth from './Auth/Signup/Signup';
 import Home from './Home/Home';
 import About from './aboutus/aboutus';
 import men from './item/men';

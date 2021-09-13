@@ -64,11 +64,13 @@
     /* border: burlywood; */
     height: 10mm;
     border-width: 0px;
+    border-radius: 5mm;
 }
 
 .ant-input{
     border-width: 0mm;
     height: 10mm; 
+    border-radius: 5mm;
 }
 
 .login-form-button{
@@ -77,6 +79,10 @@
     height: 10mm;
     border-width: 0px;
     border-radius: 5mm;
+    cursor: pointer;
+    border-color: rgb(248, 241, 248);
+    border-width: 0.7mm;
+
 
 }
 

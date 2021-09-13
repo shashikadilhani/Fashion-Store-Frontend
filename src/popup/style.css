@@ -59,6 +59,7 @@
 
 .popupcol1{
   height: 50mm;
+  padding-top: 30px;
 }
 .popupcol2{
   color: rgb(11, 12, 12);
@@ -70,17 +71,20 @@
   color: rgb(12, 11, 11);
   height: 5mm;
   /* background-color:aqua ; */
-  padding-top: 0pt;
+  padding-top: 10pt;
+  padding-left: 30px;
 }
 
 .popuprow2{
   font-size: 5mm;
+  padding-top: 60px;
+ padding-left: 35px;
 }
 
 .popuprow3{
   font-size: 5mm;
   height: 2mm; 
-  padding-top: 70mm;
+  padding-top: 85mm;
   width: 100mm;
   padding-left: 55mm;
 }

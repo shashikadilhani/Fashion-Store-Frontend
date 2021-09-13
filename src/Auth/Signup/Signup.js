@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { signup, checkUsernameAvailability, checkEmailAvailability } from '../util/APIUtills';
+import { signup, checkUsernameAvailability, checkEmailAvailability } from '../../util/APIUtills';
 import './Signup.css';
 import { Link } from 'react-router-dom';
 import { 
@@ -7,7 +7,7 @@ import {
     USERNAME_MIN_LENGTH, USERNAME_MAX_LENGTH,
     EMAIL_MAX_LENGTH,
     PASSWORD_MIN_LENGTH, PASSWORD_MAX_LENGTH
-} from './constants';
+} from '../../newAuth/constants';
 
 import { Form, Input, Button, notification } from 'antd';
 const FormItem = Form.Item;
@@ -83,7 +83,7 @@ class Signup extends Component {
 
     render() {
         return (
-            <div className="signup-container">
+            <div className="signup">
                 <h1 className="page-title">Sign Up</h1>
                 <div className="signup-content">
                     <Form onSubmit={this.handleSubmit} className="signup-form">
@@ -109,7 +109,7 @@ class Signup extends Component {
                                 autoComplete="off"
                                 placeholder="A unique username"
                                 value={this.state.username.value} 
-                                onBlur={this.validateUsernameAvailability}
+                                // onBlur={this.validateUsernameAvailability}
                                 onChange={(event) => this.handleInputChange(event, this.validateUsername)} />    
                         </FormItem>
                         <FormItem 
@@ -124,7 +124,7 @@ class Signup extends Component {
                                 autoComplete="off"
                                 placeholder="Your email"
                                 value={this.state.email.value} 
-                                onBlur={this.validateEmailAvailability}
+                                // onBlur={this.validateEmailAvailability}
                                 onChange={(event) => this.handleInputChange(event, this.validateEmail)} />    
                         </FormItem>
                         <FormItem 
@@ -141,12 +141,13 @@ class Signup extends Component {
                                 onChange={(event) => this.handleInputChange(event, this.validatePassword)} />    
                         </FormItem>
                         <FormItem>
-                            <Button type="primary" 
+                            <Button className="primary" type="primary" 
                                 htmlType="submit" 
                                 size="large" 
                                 className="signup-form-button"
-                                disabled={this.isFormInvalid()}>Sign up</Button>
-                            Already registed? <Link to="/login">Login now!</Link>
+                                disabled={this.isFormInvalid}>Sign up</Button>
+                                <br></br>
+                            <p>Already registed? <Link className="link"to="/login">Login now!</Link></p>  
                         </FormItem>
                     </Form>
                 </div>
@@ -226,17 +227,8 @@ class Signup extends Component {
     validateUsernameAvailability() {
         // First check for client side errors in username
         const usernameValue = this.state.username.value;
-        const usernameValidation = this.validateUsername(usernameValue);
+        // const usernameValidation = this.validateUsername(usernameValue);
 
-        if(usernameValidation.validateStatus === 'error') {
-            this.setState({
-                username: {
-                    value: usernameValue,
-                    ...usernameValidation
-                }
-            });
-            return;
-        }
 
         this.setState({
             username: {
@@ -248,23 +240,13 @@ class Signup extends Component {
 
         checkUsernameAvailability(usernameValue)
         .then(response => {
-            if(response.available) {
-                this.setState({
-                    username: {
-                        value: usernameValue,
-                        validateStatus: 'success',
-                        errorMsg: null
-                    }
-                });
-            } else {
-                this.setState({
-                    username: {
-                        value: usernameValue,
-                        validateStatus: 'error',
-                        errorMsg: 'This username is already taken'
-                    }
-                });
-            }
+            this.setState({
+                username: {
+                    value: usernameValue,
+                    validateStatus: 'success',
+                    errorMsg: null
+                }
+            });
         }).catch(error => {
             // Marking validateStatus as success, Form will be recchecked at server
             this.setState({
@@ -280,17 +262,6 @@ class Signup extends Component {
     validateEmailAvailability() {
         // First check for client side errors in email
         const emailValue = this.state.email.value;
-        const emailValidation = this.validateEmail(emailValue);
-
-        if(emailValidation.validateStatus === 'error') {
-            this.setState({
-                email: {
-                    value: emailValue,
-                    ...emailValidation
-                }
-            });    
-            return;
-        }
 
         this.setState({
             email: {
@@ -302,23 +273,13 @@ class Signup extends Component {
 
         checkEmailAvailability(emailValue)
         .then(response => {
-            if(response.available) {
-                this.setState({
-                    email: {
-                        value: emailValue,
-                        validateStatus: 'success',
-                        errorMsg: null
-                    }
-                });
-            } else {
-                this.setState({
-                    email: {
-                        value: emailValue,
-                        validateStatus: 'error',
-                        errorMsg: 'This Email is already registered'
-                    }
-                });
-            }
+            this.setState({
+                email: {
+                    value: emailValue,
+                    validateStatus: 'success',
+                    errorMsg: null
+                }
+            });
         }).catch(error => {
             // Marking validateStatus as success, Form will be recchecked at server
             this.setState({
