@@ -24,6 +24,7 @@ import LoadingIndicator from './common/LoadingIndicator';
 import PrivateRoute from './util/PrivetRoute';
 import Service from './Our Services/ourservices';
 import { Layout, notification } from 'antd';
+import Orders from './profile/MyOrders'
 const { Content } = Layout;
  
 
@@ -106,7 +107,10 @@ class App extends React.Component {
             currentUser={this.state.currentUser} 
             onLogout={this.handleLogout} /> */} 
                 <Switch>
-                <Route path="/home" exact component={Home} />
+                <Route exact path="/home"
+                render={(props) => <Home isAuthenticated={this.state.isAuthenticated} 
+                currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
+                </Route>
                 <Route path="/about_us" exact component={About} />
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />
@@ -123,6 +127,8 @@ class App extends React.Component {
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
                 <Route path="/shirt" exact component={Shirt} />
+
+                <Route path="/orders" exact component={Orders} />
 
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>

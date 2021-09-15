@@ -4,17 +4,27 @@ import { withCookies } from 'react-cookie';
 import { Navbar, NavLink } from 'react-bootstrap';
 import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
+import ItemService from '../Service/ItemService';
 
 class Home extends React.Component {
  
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentUser: this.props
-    }}
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     currentUser: []
+      
+  //   }}
+
+  //   componentDidMount(){       
+  //     ItemService.getCurretUser().then((response) => {
+  //         this.setState({ currentUser : response.data})
+  //     });
+
+  //   }
+
   render() {
-    console.log('mhfdjlf')
-    console.log('mhfdjlf'+ this.currentUser)
+    // console.log('mhfdjlf')
+    // console.log('mhfdjlf'+ this.props.children)
     
     return (   
       

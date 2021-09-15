@@ -3,6 +3,7 @@ import Popup from './Popup';
 import { Container, Row, Col, NavItem,NavLink } from 'react-bootstrap';
 import './style.css';
 import Login from '../Our Services/cloths';
+import Profile from '../profile/profile';
 
 function Button(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,8 @@ function Button(props) {
     {isOpen && <Popup
       content={<>
 
-        <NavLink href="/home" className="p-popuprow1" exact component={Login}>Settings</NavLink>
-        <NavLink href="/home" className="p-popuprow2" exact component={Login}>My Orders</NavLink>
+        <NavLink href="/home" className="p-popuprow1" exact component={Profile}>Settings</NavLink>
+        <NavLink href="/orders" className="p-popuprow2" >My Orders</NavLink>
         <NavLink href="/home" className="p-popuprow3" exact component={Login}>Logout</NavLink>
          
       </>}

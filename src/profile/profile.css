@@ -1,0 +1,20 @@
+.ordercol1{
+    background-image:
+    /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/f3.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:  left;
+    height: 170mm;
+    color: lawngreen;
+    text-align: center;
+    font-size: 8mm;
+    max-width: 120mm;
+    font-weight: lighter;
+}
+
+.ordercol2{
+    height: 170mm;
+    /* background-color: lawngreen; */
+}
