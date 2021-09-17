@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x:  left;
-    height: 170mm;
+    height: 160mm;
     color: lawngreen;
     text-align: center;
     font-size: 8mm;
@@ -15,6 +15,49 @@
 }
 
 .ordercol2{
-    height: 170mm;
+    height: 160mm;
     /* background-color: lawngreen; */
 }
+.order_footer{
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+    background-color: rgb(46, 58, 71);
+    margin-top: 150mm;
+    text-align: center;
+}
+
+.simple-board{ 
+    align-items: center;
+    margin-left: 50mm;
+    margin-top: 30mm;
+}
+
+.th, td {
+    /* border-bottom: 1px solid #ddd; */
+    font-size: 5mm;
+    width: 30mm;
+    height: 10mm;
+    text-align: center;
+  }
+tr:nth-child(even) {
+    background-color: #a5d3ba;
+    text-align: center;
+}
+    
+
+table {
+        border: 1px solid rgb(85, 80, 80);
+        box-shadow: blue;
+ }
+
+ .tr{
+     font-weight: bold;
+ }
+
+ .view{
+     color: #226972;
+ }
+
+ .p{
+     color: rgb(71, 4, 71);
+ }
