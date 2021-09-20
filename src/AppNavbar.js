@@ -27,15 +27,15 @@ import { NavDropdown } from 'react-bootstrap';
 export default class AppNavbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {isOpen: false};
-    this.toggle = this.toggle.bind(this);
+    // this.state = {isOpen: false};
+    // this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
+  // toggle() {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen
+  //   });
+  // }
 
   render() {
     return(
@@ -60,13 +60,11 @@ export default class AppNavbar extends Component {
 
             {/* use popupp */}
 
-            <Popup />
+            <Popup user={this.props.currentUser} />
             {/* <NavLink href="/home" exact component={Login} >
             <img src={logo} alt="Logo" width="40" height="40" />
-            </NavLink> */}
+            </NavLink> */}  
 
-            
- 
           </Navbar>
           </div>
           </>

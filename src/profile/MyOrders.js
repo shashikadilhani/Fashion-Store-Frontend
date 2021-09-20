@@ -8,15 +8,19 @@ import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
 
+   constructor(props) {
+    super(props);
+    console.log(props.location.aboutProps.user.username);
+  }
+
   render() {
-    
     return (   
       
          <> 
             <Row>
                 <Col className="ordercol1">
                     <br></br>
-                     MY ORDERS
+                     MY ORDERS {this.props.location.aboutProps.user.name}
                 </Col>
 
                 <Col className="ordercol2">

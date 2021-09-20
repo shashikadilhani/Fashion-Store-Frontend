@@ -69,7 +69,7 @@ class App extends React.Component {
     this.loadCurrentUser();
   }
 
-  handleLogout(redirectTo="/home", notificationType="success", description="You're successfully logged out.") {
+  handleLogout(redirectTo="/", notificationType="success", description="You're successfully logged out.") {
     localStorage.removeItem(ACCESS_TOKEN);
 
     this.setState({
@@ -101,7 +101,9 @@ class App extends React.Component {
     return (
      
       <Router>
-           <AppNavbar />
+           <AppNavbar  isAuthenticated={this.state.isAuthenticated} 
+            currentUser={this.state.currentUser} 
+            onLogout={this.handleLogout}  />
 
            {/* <AppHeader isAuthenticated={this.state.isAuthenticated} 
             currentUser={this.state.currentUser} 
@@ -127,15 +129,13 @@ class App extends React.Component {
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
                 <Route path="/shirt" exact component={Shirt} />
-
                 <Route path="/orders" exact component={Orders} />
-
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
                 <Route path="/signup" exact component={Auth} />
                 
                 <Route path="/" 
-                  render={(props) => <Party isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
+                  render={(props) => <About isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
                 </Route>
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
                 <Route component={NotFound}></Route>    

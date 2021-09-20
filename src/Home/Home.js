@@ -8,12 +8,9 @@ import ItemService from '../Service/ItemService';
 
 class Home extends React.Component {
  
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     currentUser: []
-      
-  //   }}
+  constructor(props) {
+    super(props);
+  }
 
   //   componentDidMount(){       
   //     ItemService.getCurretUser().then((response) => {
