@@ -31,7 +31,7 @@ function Button(props) {
         <p className="para">{props.user.username}</p>
         <NavLink href="/home" className="p-popuprow1"  onClick={props.handleClose} exact component={Profile}>Settings</NavLink>
         {/* <NavLink href="/orders" className="p-popuprow2" onClick={props.handleClose} >My Orders</NavLink> */}
-        <NavLink href="/home" className="p-popuprow3" onClick={props.handleClose} exact component={Login}>Logout</NavLink>
+        <NavLink onClick={props.onLogout}  className="p-popuprow3">Logout</NavLink>
         <NavLink  as={Link}
             to={{
               pathname: '/orders',

@@ -5,12 +5,23 @@ import { Navbar, NavLink } from 'react-bootstrap';
 import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import OrderService from '../Service/OrderService';
 
 class Home extends React.Component {
 
    constructor(props) {
     super(props);
     console.log(props.location.aboutProps.user.username);
+    this.state = {
+      orders:[] 
+  }
+  }
+
+  componentDidMount(){       
+    OrderService.getUserCurrentOrders().then((response) => {
+        this.setState({ orders : response.data})
+    });
+
   }
 
   render() {
@@ -35,7 +46,20 @@ class Home extends React.Component {
                         <td id="cell0-4">Status</td>
                         <td id="cell0-5">View</td>
                       </tr>
-                      <tr id="row1">
+
+                      {this.state.items.map((item) => (
+                         <tr id="row1">
+                         <td id="cell1-0">fgh</td>
+                         <td id="cell1-1">jj</td>
+                         <td id="cell1-2">kjdfn</td>
+                         <td id="cell1-3">kjdfn</td>
+                         <td id="cell1-4">kjdfn</td>
+                         <td id="cell1-5">
+                            <Link to="/blouse" className="view">View</Link> 
+                         </td>
+                       </tr>
+                      ))}
+                      {/* <tr id="row1">
                         <td id="cell1-0">fgh</td>
                         <td id="cell1-1">jj</td>
                         <td id="cell1-2">kjdfn</td>
@@ -65,7 +89,7 @@ class Home extends React.Component {
                         <td id="cell2-2">kjfd</td>
                         <td id="cell1-3">kjdfn</td>
                         <td id="cell1-4">kjdfn</td>
-                      </tr>
+                      </tr> */}
                       
                     </tbody>
                   </table>
@@ -76,7 +100,7 @@ class Home extends React.Component {
                             © {new Date().getFullYear()}, made with{" "}
                             <i className="fa fa-heart heart" /> by SHASHIKA DILHANI
                         </span>
-             </div>   
+            </div>   
               </> 
     );
   }

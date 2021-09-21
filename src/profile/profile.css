@@ -61,3 +61,83 @@ table {
  .p{
      color: rgb(71, 4, 71);
  }
+
+.pp{
+    color: black;
+    font-size: 8mm;
+    margin-top: 5mm;
+    font-weight: lighter;
+}
+
+.ppp{
+    font-size: 6mm;
+    color: rgb(36, 111, 173);;
+    margin-top: 5mm;
+}
+
+ .profilecol1{
+     height: 155mm;
+     margin-bottom: 10mm;
+     width: 100mm;
+ }
+
+ .profilecol2{
+     width: 150mm;
+     margin-left: 40mm;
+     row-gap: 10mm;
+     margin-top: 10mm;
+     
+}
+ 
+.profilecol3{
+    width: 100mm;
+    margin-left: 10mm;
+    row-gap: 10mm;
+    margin-top: 10mm;
+    background-image:
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/image5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+ 
+
+.profilerow{
+    text-align: center;
+    margin-top: 10mm;
+    align-items: center;
+    /* border-radius: 5mm; */
+    background-color: rgb(255, 254, 251);
+    border:3mm;
+    width: 150mm;
+    height: 10mm;
+    border-width: 0.05mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile_footer{
+    background-color: rgb(36, 111, 173);
+    text-align: center;
+    /* margin-top: 5mm; */
+    color: aliceblue;
+    padding: 10px 0px 5px 0px;
+}
+
+.photo{
+    width: 70mm;
+    height: 68mm;
+    /* background-color: violet; */
+    margin-left: 15mm;
+    border-radius: 45mm;
+    background-image:
+    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
+    url("../assets/image5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 2mm;
+    border-style: solid;
+    border-color: rgb(36, 111, 173);
+  
+}

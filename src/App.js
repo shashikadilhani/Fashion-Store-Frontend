@@ -24,7 +24,8 @@ import LoadingIndicator from './common/LoadingIndicator';
 import PrivateRoute from './util/PrivetRoute';
 import Service from './Our Services/ourservices';
 import { Layout, notification } from 'antd';
-import Orders from './profile/MyOrders'
+import Orders from './profile/MyOrders';
+import Profile from './profile/profile';
 const { Content } = Layout;
  
 
@@ -129,13 +130,16 @@ class App extends React.Component {
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
                 <Route path="/shirt" exact component={Shirt} />
+
                 <Route path="/orders" exact component={Orders} />
+                <Route path="/profile" exact component={Profile} />
+
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
                 <Route path="/signup" exact component={Auth} />
                 
                 <Route path="/" 
-                  render={(props) => <About isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
+                  render={(props) => <About isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props}  />}>
                 </Route>
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
                 <Route component={NotFound}></Route>    
