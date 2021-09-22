@@ -5,6 +5,7 @@ import { Navbar, NavLink } from 'react-bootstrap';
 import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
 import ItemService from '../Service/ItemService';
+import { withRouter } from 'react-router';
 
 class Home extends React.Component {
  
@@ -118,4 +119,4 @@ class Home extends React.Component {
   }
 }
 
-export default withCookies(Home);
+export default withRouter(Home);

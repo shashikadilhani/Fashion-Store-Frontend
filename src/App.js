@@ -70,7 +70,7 @@ class App extends React.Component {
     this.loadCurrentUser();
   }
 
-  handleLogout(redirectTo="/", notificationType="success", description="You're successfully logged out.") {
+  handleLogout(redirectTo="/about_us", notificationType="success", description="You're successfully logged out.") {
     localStorage.removeItem(ACCESS_TOKEN);
 
     this.setState({
@@ -78,7 +78,7 @@ class App extends React.Component {
       isAuthenticated: false
     });
 
-    this.props.history.push(redirectTo);
+    this.props.history.push("/about_us");
     
     notification[notificationType]({
       message: 'Polling App',
@@ -105,16 +105,13 @@ class App extends React.Component {
            <AppNavbar  isAuthenticated={this.state.isAuthenticated} 
             currentUser={this.state.currentUser} 
             onLogout={this.handleLogout}  />
-
-           {/* <AppHeader isAuthenticated={this.state.isAuthenticated} 
-            currentUser={this.state.currentUser} 
-            onLogout={this.handleLogout} /> */} 
+            
                 <Switch>
                 <Route exact path="/home"
                 render={(props) => <Home isAuthenticated={this.state.isAuthenticated} 
                 currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
                 </Route>
-                <Route path="/about_us" exact component={About} />
+                {/* <Route path="/about_us" exact component={About} /> */}
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />
                 <Route path="/womentypes" exact component={kids} />
@@ -138,7 +135,7 @@ class App extends React.Component {
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
                 <Route path="/signup" exact component={Auth} />
                 
-                <Route path="/" 
+                <Route path="/about_us" 
                   render={(props) => <About isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props}  />}>
                 </Route>
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>

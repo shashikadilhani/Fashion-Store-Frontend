@@ -6,6 +6,7 @@ import Login from './Auth/Login/login';
 import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';
 import Popup from './popup-profile/button';
+import {withRouter} from 'react-router-dom';
 // import './styles/app.scss';
 import {
   Collapse,Navbar, NavLink,
@@ -24,11 +25,18 @@ import {
   import { DropdownItem } from 'reactstrap';
 import { NavDropdown } from 'react-bootstrap';
 
-export default class AppNavbar extends Component {
+class AppNavbar extends Component {
   constructor(props) {
     super(props);
+    this.handleMenuClick = this.handleMenuClick.bind(this); 
     // this.state = {isOpen: false};
     // this.toggle = this.toggle.bind(this);
+  }
+
+  handleMenuClick() {
+    
+      this.props.onLogout();
+    
   }
 
   // toggle() {
@@ -49,7 +57,8 @@ export default class AppNavbar extends Component {
             <NavLink href="/our_services" exact component={Services} className="navitem">Our Services</NavLink>
             <NavLink href="/login" exact component={Login} className="navitem">Contact</NavLink>
             <NavItem className="navitem2">Items</NavItem>
-            
+            <NavItem currentUser={this.props.currentUser} 
+                  onClick={this.handleMenuClick}>logout</NavItem>
             <NavDropdown className="navdrop"> 
                 <DropdownItem>Women</DropdownItem>
                 <DropdownItem>Men</DropdownItem>
@@ -72,7 +81,7 @@ export default class AppNavbar extends Component {
   }
 }
 
- 
+export default withRouter(AppNavbar);
 // import React from "react";
 // import { connect } from "react-redux";
 // import PropTypes from "prop-types";

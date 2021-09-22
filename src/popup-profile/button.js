@@ -14,6 +14,11 @@ function Button(props) {
     setIsOpen(!isOpen);
   }
  
+  const handleMenuClick = () => {
+    
+      props.onLogout();
+    
+  }
   return <div>
     <input className="p-btn3"
       type="button"
@@ -29,9 +34,9 @@ function Button(props) {
         
         
         <p className="para">{props.user.username}</p>
-        <NavLink href="/home" className="p-popuprow1"  onClick={props.handleClose} exact component={Profile}>Settings</NavLink>
-        {/* <NavLink href="/orders" className="p-popuprow2" onClick={props.handleClose} >My Orders</NavLink> */}
-        <NavLink onClick={props.onLogout}  className="p-popuprow3">Logout</NavLink>
+        <NavLink href="/home" className="p-popuprow1"   exact component={Profile}>Settings</NavLink>
+        {/* <NavLink href="/orders" className="p-popuprow2" >My Orders</NavLink> */}
+        <NavLink   className="p-popuprow3">Logout</NavLink>
         <NavLink  as={Link}
             to={{
               pathname: '/orders',
@@ -41,6 +46,8 @@ function Button(props) {
           }}      
           > My Orders
       </NavLink>
+
+      
     
       </>}
       handleClose={togglePopup}

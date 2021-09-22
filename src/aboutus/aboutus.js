@@ -5,6 +5,8 @@ import './aboutus.css';
 import { getCurrentUser } from '../util/APIUtills';
 import ItemService from '../Service/ItemService';
 import { Layout, notification } from 'antd';
+import { BrowserRouter as Router,Switch,Route,withRouter } from 'react-router-dom';
+
 
 class aboutus extends Component {
     render () {
@@ -56,4 +58,4 @@ class aboutus extends Component {
     }
   }
   
-  export default aboutus;
+  export default withRouter(aboutus);
