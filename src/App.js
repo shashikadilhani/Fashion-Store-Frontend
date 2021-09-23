@@ -23,6 +23,7 @@ import NotFound from './common/NotFound';
 import LoadingIndicator from './common/LoadingIndicator';
 import PrivateRoute from './util/PrivetRoute';
 import Service from './Our Services/ourservices';
+import Contact from './Contactus/Contact';
 import { Layout, notification } from 'antd';
 import Orders from './profile/MyOrders';
 import Profile from './profile/profile';
@@ -123,6 +124,7 @@ class App extends React.Component {
 
 
                 <Route path="/our_services" exact component={Service} />
+                <Route path="/contact" exact component={Contact} />
 
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
