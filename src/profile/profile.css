@@ -7,11 +7,15 @@
     background-size: contain;
     background-position-x:  left;
     height: 160mm;
-    color: lawngreen;
-    text-align: center;
+    color: #7cfc00;
     font-size: 8mm;
     max-width: 120mm;
     font-weight: lighter;
+}
+
+.op{
+    margin-left: -100mm;
+    color: aqua;
 }
 
 .ordercol2{
@@ -48,6 +52,10 @@ tr:nth-child(even) {
 table {
         border: 1px solid rgb(85, 80, 80);
         box-shadow: blue;
+ }
+
+ .simple-board{
+    margin-left: -50mm;
  }
 
  .tr{

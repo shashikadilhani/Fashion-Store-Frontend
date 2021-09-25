@@ -6,22 +6,27 @@ import Footer from '../footer/footer'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import OrderService from '../Service/OrderService';
+import axios from 'axios';
 
 class Home extends React.Component {
 
    constructor(props) {
     super(props);
-    console.log(props.location.aboutProps.user.username);
+    // console.log(props.location.aboutProps.user.username);
     this.state = {
-      orders:[] 
+      persons:[] 
   }
   }
 
-  componentDidMount(){       
-    OrderService.getUserCurrentOrders().then((response) => {
-        this.setState({ orders : response.data})
+  componentDidMount() {
+
+    const user_id  = this.props.location.aboutProps.user.id
+    console.log("jhdfkhoifs" + user_id);
+    // Extracted productId from the Route params.
+    axios.get(`http://localhost:8080/customer/orders/${user_id}`).then((response) => {
+      // const persons = res.data;
+      this.setState({ persons : response.data })
     });
-
   }
 
   render() {
@@ -31,7 +36,7 @@ class Home extends React.Component {
             <Row>
                 <Col className="ordercol1">
                     <br></br>
-                     MY ORDERS {this.props.location.aboutProps.user.name}
+                     <p className="op">YOUR ORDERS</p>
                 </Col>
 
                 <Col className="ordercol2">
@@ -47,18 +52,18 @@ class Home extends React.Component {
                         <td id="cell0-5">View</td>
                       </tr>
 
-                      {this.state.items.map((item) => (
+                      {this.state.persons.map((item) => (
                          <tr id="row1">
-                         <td id="cell1-0">fgh</td>
-                         <td id="cell1-1">jj</td>
-                         <td id="cell1-2">kjdfn</td>
-                         <td id="cell1-3">kjdfn</td>
-                         <td id="cell1-4">kjdfn</td>
+                         <td id="cell1-0">{item.order_id}</td>
+                         <td id="cell1-1">{item.orderDate}</td>
+                         <td id="cell1-2">{item.orderDate}</td>
+                         <td id="cell1-3">{item.totalPrice}</td>
+                         <td id="cell1-4">{item.orderStatus}</td>
                          <td id="cell1-5">
                             <Link to="/blouse" className="view">View</Link> 
                          </td>
                        </tr>
-                      ))}
+                      ))} 
                       {/* <tr id="row1">
                         <td id="cell1-0">fgh</td>
                         <td id="cell1-1">jj</td>
