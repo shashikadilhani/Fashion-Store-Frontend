@@ -8,15 +8,15 @@ class Contact extends Component {
       return (
         <>
      
-        <Grid className="contact" Container>
-                   <Grid className="con-row-1" direction='row' container>
+        <Grid className="contact" direction='row' Container>
+                   <Grid className="con-row-1">
                         
                                               
                             <p className="h1" >
                               <br></br>
                               <br></br>
                               <br></br>
-                             OUR SERVICES
+                             Contact US
                             </p>
                             Solution for every need! <br></br>
                              We provide all pet related services for everyone.  <br></br>
@@ -25,8 +25,21 @@ class Contact extends Component {
                    </Grid>
 
 
-                    <Grid className="con-row-2"  direction='row' container>
-                          kjdhfvk  
+                    <Grid className="con-row-2">
+                    Address
+                    No.58, J-Ela Road , Gampaha
+                    <br></br>
+                    Phone
+                    Reception : +94 79 8888 990
+                    Office : +94 34 227 0456
+                    <br></br>
+                    Email
+                    Office : fashionc@gmail.com
+                    Site : fashionc.com
+                    <br></br>
+                    Social
+
+  
 
                     </Grid>
 
