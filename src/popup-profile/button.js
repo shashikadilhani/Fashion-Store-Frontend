@@ -31,11 +31,16 @@ function Button(props) {
     {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
     {isOpen && <Popup
       content={<>
-        
-        
         <p className="para">{props.user.username}</p>
-        <NavLink href="/home" className="p-popuprow1"   exact component={Profile}>Settings</NavLink>
-        {/* <NavLink href="/orders" className="p-popuprow2" >My Orders</NavLink> */}
+        <NavLink  as={Link}
+            to={{
+              pathname: '/profile',
+              aboutProps:{
+                user:props.user
+              }
+          }}      
+          > Settings
+      </NavLink>
         <NavLink   className="p-popuprow3">Logout</NavLink>
         <NavLink  as={Link}
             to={{

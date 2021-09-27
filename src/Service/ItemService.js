@@ -19,9 +19,6 @@ class ItemService {
         })
     }
 
-    getCurretUser(){
-        return axios.get(`http://localhost:8080/customer/user/me`);
-    }
 }
 
 export default new ItemService();

@@ -2,27 +2,30 @@ import React, { Component } from 'react';
 import './profile.css';
 import Grid from '@material-ui/core/Grid';
 import { withCookies } from 'react-cookie';
-import { Container, Row, Col } from 'react-bootstrap';
-import OrderService from '../Service/OrderService';
+import axios from 'axios';
 
 class Profile extends React.Component {
 
-   constructor(props) {
+  constructor(props) {
     super(props);
-    // console.log(props.location.aboutProps.user.username);
-//     this.state = {
-//       orders:[] 
-//   }
+    this.state = {
+      persons:[] ,
+      user:[]
+  }
   }
 
-//   componentDidMount(){       
-//     OrderService.getUserCurrentOrders().then((response) => {
-//         this.setState({ orders : response.data})
-//     });
-
-//   }
+  componentDidMount() {
+    const user_id  = this.props.location.aboutProps.user.id
+    console.log("jhdfkhoifs" + user_id);
+    // Extracted productId from the Route params.
+    axios.get(`http://localhost:8080/customer/view/${user_id}`).then((response) => {
+      // const persons = res.data;
+      this.setState({ user : response.data })
+    });
+  }
 
   render() {
+    console.log(this.props)
     return (   
       
          <> 
@@ -35,14 +38,14 @@ class Profile extends React.Component {
                         lkjk;
                     </Grid>
 
-                    <p className="ppp">Shashika Dilhani</p>
+                    <p className="ppp">{this.state.user.username}</p>
                     </Grid>
 
                     <Grid className="profilecol2">
-                        <Grid className="profilerow">hhhhhh</Grid>
-                        <Grid className="profilerow">hhhhhh</Grid>
-                        <Grid className="profilerow">hhhhhh</Grid>
-                        <Grid className="profilerow">hhhhhh</Grid>
+                        <Grid className="profilerow">{this.state.user.name}</Grid>
+                        <Grid className="profilerow">{this.state.user.email}</Grid>
+                        <Grid className="profilerow">{this.state.user.gender}</Grid>
+                        <Grid className="profilerow">{this.state.user.birthday}</Grid>
                         <Grid className="profilerow">hhhhhh</Grid>
                         <Grid className="profilerow">hhhhhh</Grid>
                      

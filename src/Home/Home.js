@@ -12,6 +12,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
   }
+  
 
   //   componentDidMount(){       
   //     ItemService.getCurretUser().then((response) => {
@@ -21,6 +22,7 @@ class Home extends React.Component {
   //   }
 
   render() {
+    console.log(this.props)
     // console.log('mhfdjlf')
     // console.log('mhfdjlf'+ this.props.children)
     
