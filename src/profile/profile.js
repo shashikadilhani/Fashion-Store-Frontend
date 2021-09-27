@@ -35,7 +35,7 @@ class Profile extends React.Component {
                     <p className="pp">Profile Settings</p>
 
                     <Grid className="photo">
-                        lkjk;
+                    {<img width = '250'height='250' class="rounded-circle" quality='100' src={`data:image/png;base64,${this.state.user.photoPath} `} />}
                     </Grid>
 
                     <p className="ppp">{this.state.user.username}</p>

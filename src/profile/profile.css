@@ -84,13 +84,13 @@ table {
 }
 
  .profilecol1{
-     height: 155mm;
+     height: 154mm;
      margin-bottom: 10mm;
      width: 100mm;
  }
 
  .profilecol2{
-     width: 150mm;
+     width: 154mm;
      margin-left: 40mm;
      row-gap: 10mm;
      margin-top: 10mm;
@@ -101,7 +101,7 @@ table {
     width: 100mm;
     margin-left: 10mm;
     row-gap: 10mm;
-    margin-top: 10mm;
+    /* margin-top: 10mm; */
     background-image:
     /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/image5.jpg");
@@ -133,15 +133,11 @@ table {
     padding: 10px 0px 5px 0px;
 }
 
-.photo{
-    width: 70mm;
-    height: 68mm;
-    /* background-color: violet; */
+.rounded-circle{
+    
     margin-left: 15mm;
-    border-radius: 45mm;
-    background-image:
-    /* linear-gradient(to top, rgba(10, 10, 10, 0.75), rgba(0, 0, 0, 0.25)), */
-    url("../assets/image5.jpg");
+    /* background-image:
+    url("../assets/image5.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     border-width: 2mm;
