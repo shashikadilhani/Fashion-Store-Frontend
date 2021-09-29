@@ -102,6 +102,12 @@
     margin-left: 5mm;
     border-width: 0mm;
   }
+  .para2.nav-link{
+    color: black;
+    font-size: 4mm;
+    font-weight: normal;
+    text-align: center;
+  }
   .para{
     color: black;
     font-size: 4mm;

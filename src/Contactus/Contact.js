@@ -16,7 +16,7 @@ class Contact extends Component {
                               <br></br>
                               <br></br>
                               <br></br>
-                             Contact US
+                             Contact Us
                             </p>
                             Solution for every need! <br></br>
                              We provide all pet related services for everyone.  <br></br>

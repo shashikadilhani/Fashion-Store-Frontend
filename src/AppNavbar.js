@@ -7,6 +7,7 @@ import Services from './Our Services/ourservices';
 import logo from './assets/saree.jpg';
 import Popup from './popup-profile/button';
 import {withRouter} from 'react-router-dom';
+import axios from 'axios';
 // import './styles/app.scss';
 import {
   Collapse,Navbar, NavLink,
@@ -29,6 +30,9 @@ class AppNavbar extends Component {
   constructor(props) {
     super(props);
     this.handleMenuClick = this.handleMenuClick.bind(this); 
+    this.state = {
+      user:[]
+  }
     // this.state = {isOpen: false};
     // this.toggle = this.toggle.bind(this);
   }
@@ -38,12 +42,6 @@ class AppNavbar extends Component {
       this.props.onLogout();
     
   }
-
-  // toggle() {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen
-  //   });
-  // }
 
   render() {
     return(
