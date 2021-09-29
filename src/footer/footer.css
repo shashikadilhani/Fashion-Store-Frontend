@@ -3,7 +3,7 @@
     background-attachment: fixed;
     position: relative;
     line-height: 30px;
-    height: 170px;
+    height: 150px;
     margin-top: 90mm;
 }
 
@@ -28,13 +28,14 @@
 }
 
 .copyright{
-    color: aliceblue;
+    background-color: #310c1c;
+    color: rgb(246, 246, 250);
     padding: 10px 0px 5px 0px;
     text-align: center;
     padding-top: 5mm;
     /* background-color: aqua; */
     padding-top: 90px;
-    height: 10mm;
+    /* height: 35mm; */
 }
 
 .heart {

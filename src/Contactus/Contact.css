@@ -3,11 +3,18 @@
     /* linear-gradient(to top, rgba(12, 14, 13, 0.75), rgba(0, 0, 0, 0.25)), */
     url("../assets/contact4.jpg");
     /* padding: 30px; */
-    /* background-size: 500px; */
-    height: 180mm;
-    /* max-width: 100mm; */
+    background-size: 500px;
+    height: 133mm;
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
     color: rgb(250, 246, 246);    
+    margin-bottom: 0mm;
+}
+
+.con-row-2{
+    color: black;
+    background-color: rgb(56, 56, 70);
+    margin-top: -20mm;
+    height: 38mm;
 }
