@@ -71,20 +71,19 @@
   color: rgb(12, 11, 11);
   height: 5mm;
   /* background-color:aqua ; */
-  padding-top: 10pt;
   padding-left: 30px;
 }
 
 .popuprow2{
   font-size: 5mm;
-  padding-top: 60px;
+  padding-top: 0px;
  padding-left: 35px;
 }
 
 .popuprow3{
   font-size: 5mm;
   height: 2mm; 
-  padding-top: 85mm;
+  padding-top: 75mm;
   width: 100mm;
   padding-left: 55mm;
 }
@@ -102,6 +101,7 @@
   cursor: pointer;
   font-size: 4mm;
   color: rgb(6, 7, 7);
+
   
 }
  

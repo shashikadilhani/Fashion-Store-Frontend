@@ -81,10 +81,10 @@ class App extends React.Component {
 
     this.props.history.push("/about_us");
     
-    notification[notificationType]({
-      message: 'Polling App',
-      description: description,
-    });
+    // notification[notificationType]({
+    //   message: 'Polling App',
+    //   description: description,
+    // });
   }
 
   handleLogin() {

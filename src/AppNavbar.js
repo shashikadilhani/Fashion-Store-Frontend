@@ -37,10 +37,8 @@ class AppNavbar extends Component {
     // this.toggle = this.toggle.bind(this);
   }
 
-  handleMenuClick() {
-    
-      this.props.onLogout();
-    
+  handleMenuClick() { 
+      this.props.onLogout(); 
   }
 
   render() {
