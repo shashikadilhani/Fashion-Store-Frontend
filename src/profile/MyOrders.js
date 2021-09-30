@@ -18,7 +18,7 @@ class Home extends React.Component {
 
   componentDidMount() {
 
-    const user_id  = this.props.location.aboutProps.user.id
+    const user_id  = this.props.currentUser.id
     console.log("jhdfkhoifs" + user_id);
     // Extracted productId from the Route params.
     axios.get(`http://localhost:8080/customer/orders/${user_id}`).then((response) => {

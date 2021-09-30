@@ -53,8 +53,8 @@ class AppNavbar extends Component {
             <NavLink href="/our_services" exact component={Services} className="navitem">Our Services</NavLink>
             <NavLink href="/contact" exact component={Login} className="navitem">Contact</NavLink>
             <NavItem className="navitem2">Items</NavItem>
-            <NavItem currentUser={this.props.currentUser} 
-                  onClick={this.handleMenuClick}>logout</NavItem>
+            <NavLink className="navitem" currentUser={this.props.currentUser} 
+                  onClick={this.handleMenuClick}>logout</NavLink>
             <NavDropdown className="navdrop"> 
                 <DropdownItem>Women</DropdownItem>
                 <DropdownItem>Men</DropdownItem>
@@ -63,12 +63,7 @@ class AppNavbar extends Component {
             </NavDropdown>
             <button onClick="sdff" className="navdiv">ORDER NOW</button> 
 
-            {/* use popupp */}
-
             <Popup user={this.props.currentUser} />
-            {/* <NavLink href="/home" exact component={Login} >
-            <img src={logo} alt="Logo" width="40" height="40" />
-            </NavLink> */}  
 
           </Navbar>
           </div>

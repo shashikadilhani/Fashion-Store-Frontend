@@ -4,8 +4,9 @@ import './Contact.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
-class Contact extends Component {
+class Contact extends React.Component {
     render () {
       return (
         <>
@@ -67,4 +68,4 @@ class Contact extends Component {
     }
   }
   
-  export default Contact;
+  export default withRouter(Contact);

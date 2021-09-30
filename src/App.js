@@ -2,6 +2,7 @@ import { BrowserRouter as Router,Switch,Route,withRouter } from 'react-router-do
 import AppNavbar from './AppNavbar';
 import Auth from './Auth/Signup/Signup';
 import Home from './Home/Home';
+import Home2 from './home2';
 import About from './aboutus/aboutus';
 import men from './item/men';
 import women from './item/women';
@@ -27,6 +28,7 @@ import Contact from './Contactus/Contact';
 import { Layout, notification } from 'antd';
 import Orders from './profile/MyOrders';
 import Profile from './profile/profile';
+import { Redirect } from 'react-router';
 const { Content } = Layout;
  
 
@@ -71,7 +73,7 @@ class App extends React.Component {
     this.loadCurrentUser();
   }
 
-  handleLogout(redirectTo="/about_us", notificationType="success", description="You're successfully logged out.") {
+  handleLogout(redirectTo="/", notificationType="success", description="You're successfully logged out.") {
     localStorage.removeItem(ACCESS_TOKEN);
 
     this.setState({
@@ -79,12 +81,12 @@ class App extends React.Component {
       isAuthenticated: false
     });
 
-    this.props.history.push("/about_us");
+    this.props.history.push(redirectTo);
     
-    // notification[notificationType]({
-    //   message: 'Polling App',
-    //   description: description,
-    // });
+    notification[notificationType]({
+      message: 'Polling App',
+      description: description
+    });
   }
 
   handleLogin() {
@@ -98,7 +100,7 @@ class App extends React.Component {
 
   render() {
     if(this.state.isLoading) {
-      return <LoadingIndicator />
+      return <LoadingIndicator /> 
     }
     return (
      
@@ -112,7 +114,7 @@ class App extends React.Component {
                 render={(props) => <Home isAuthenticated={this.state.isAuthenticated} 
                 currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
                 </Route>
-                {/* <Route path="/about_us" exact component={About} /> */}
+                <Route path="/about_us" exact component={About} />
                 <Route path="/men" exact component={men} />
                 <Route path="/kids" exact component={kids} />
                 <Route path="/womentypes" exact component={kids} />
@@ -130,16 +132,20 @@ class App extends React.Component {
                 <Route path="/saree" exact component={saree} />
                 <Route path="/shirt" exact component={Shirt} />
 
-                <Route path="/orders" exact component={Orders} />
-                <Route path="/profile" exact component={Profile} />
-
+                <Route path="/orders" 
+                 render={(props) => <Orders isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
+                 </Route>
+                <Route path="/profile" 
+                  render={(props) => <Profile isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
+                </Route>
                 <Route path="/login" 
-                  render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
+                  render={(props) => <Login onLogin={this.handleLogin} {...props} />}>
+                </Route>
                 <Route path="/signup" exact component={Auth} />
                 
-                <Route path="/about_us" 
-                  render={(props) => <About isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props}  />}>
-                </Route>
+                {/* <Route path="/home" 
+                  render={(props) => <Home isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props}  />}>
+                </Route> */}
                 <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
                 <Route component={NotFound}></Route>    
                 </Switch>     
