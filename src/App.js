@@ -110,6 +110,10 @@ class App extends React.Component {
             onLogout={this.handleLogout}  />
             
                 <Switch>
+                <Route exact path="/"
+                  render={(props) => <Home2 isAuthenticated={this.state.isAuthenticated} 
+                      currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
+                </Route>
                 <Route exact path="/home"
                 render={(props) => <Home isAuthenticated={this.state.isAuthenticated} 
                 currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props} />}>
@@ -131,7 +135,7 @@ class App extends React.Component {
                 <Route path="/blouse" exact component={blouse} />
                 <Route path="/saree" exact component={saree} />
                 <Route path="/shirt" exact component={Shirt} />
-
+{/* 
                 <Route path="/orders" 
                  render={(props) => <Orders isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} {...props}  />}>
                  </Route>
@@ -141,12 +145,11 @@ class App extends React.Component {
                 <Route path="/login" 
                   render={(props) => <Login onLogin={this.handleLogin} {...props} />}>
                 </Route>
-                <Route path="/signup" exact component={Auth} />
+                <Route path="/signup" exact component={Auth} /> */}
                 
                 {/* <Route path="/home" 
                   render={(props) => <Home isAuthenticated={this.state.isAuthenticated} currentUser={this.state.currentUser} handleLogout={this.handleLogout} {...props}  />}>
                 </Route> */}
-                <PrivateRoute authenticated={this.state.isAuthenticated} path="/home" component={Home} handleLogout={this.handleLogout}></PrivateRoute>
                 <Route component={NotFound}></Route>    
                 </Switch>     
         </Router>
